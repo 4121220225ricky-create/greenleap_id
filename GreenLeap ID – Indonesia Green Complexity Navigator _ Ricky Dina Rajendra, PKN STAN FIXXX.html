@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://4121220225ricky-create.github.io/greenleap/#home -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GreenLeap ID – Indonesia Green Complexity Navigator | Ricky Dina Rajendra, PKN STAN</title>
+<style>
+/* ─── RESET & TOKENS ────────────────────────────── */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --r:#A93226;--dr:#7B241C;--o:#C0562A;--a:#D4880A;--g:#E8A210;
+  --rbg:#FADBD8;--obg:#FDEBD0;--abg:#FEF5E7;--gbg:#FEFCE8;
+  --bg:#F7EFE8;--sf:#fff;--tx:#1A0400;--muted:#7A5840;
+  --bdr:#E0CEBC;--hi:#F0E6DC;--sh:0 2px 10px rgba(169,50,38,.1);
+  --rad:8px
+}
+.dk{
+  --bg:#1C1008;--sf:#2A1A0E;--tx:#F0E4D4;--muted:#C0A080;
+  --bdr:#5A3820;--hi:#2A1A0E;--rbg:#3A1010;--obg:#3A2010;--abg:#3A2A10
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);color:var(--tx);line-height:1.6;font-size:15px;
+  -webkit-font-smoothing:antialiased}
+
+/* ─── LAYOUT ────────────────────────────────────── */
+.w{max-width:1200px;margin:0 auto;padding:0 18px}
+section{padding:2.5rem 0}
+section:nth-child(odd){background:var(--hi)}
+
+/* ─── HEADER ────────────────────────────────────── */
+header{background:linear-gradient(135deg,var(--dr) 0%,var(--o) 55%,var(--a) 100%);
+  color:#fff;padding:.8rem 0;position:sticky;top:0;z-index:100;
+  box-shadow:0 2px 10px rgba(0,0,0,.22)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:.5rem}
+.logo{font-size:1.3rem;font-weight:800;white-space:nowrap}
+.logo sup{font-size:.6rem;opacity:.7;font-weight:400}
+.nl{display:flex;gap:.05rem;list-style:none}
+.nl a{color:rgba(255,255,255,.88);padding:.38rem .72rem;border-radius:6px;
+  font-size:.83rem;font-weight:500;text-decoration:none;transition:background .15s;display:block}
+.nl a:hover,.nl a.on{background:rgba(255,255,255,.2)}
+.nr{display:flex;align-items:center;gap:.45rem}
+.btn{padding:.38rem 1rem;border:none;border-radius:6px;cursor:pointer;
+  font-weight:600;font-size:.82rem;transition:opacity .15s,box-shadow .15s;white-space:nowrap}
+.bw{background:#fff;color:var(--r)}
+.bw:hover{box-shadow:0 3px 10px rgba(0,0,0,.2)}
+.bo{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.bo:hover{background:rgba(255,255,255,.15)}
+.bor{background:var(--o);color:#fff}
+.bor:hover{opacity:.88}
+.dbtn{background:rgba(255,255,255,.14);border:none;color:#fff;
+  padding:.33rem .58rem;border-radius:6px;cursor:pointer;font-size:.97rem}
+.dbtn:hover{background:rgba(255,255,255,.26)}
+.hm{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:.4rem}
+.hm span{width:19px;height:2px;background:#fff;border-radius:2px;display:block}
+@media(max-width:840px){
+  .nl{display:none;position:absolute;top:100%;left:0;right:0;
+    background:var(--dr);flex-direction:column;padding:.5rem}
+  .nl.op{display:flex}
+  .hm{display:flex}
+}
+
+/* ─── PROGRESS ──────────────────────────────────── */
+#sp{position:fixed;top:0;left:0;height:3px;z-index:200;pointer-events:none;
+  background:linear-gradient(90deg,var(--r),var(--g));width:0;will-change:width}
+
+/* ─── TOAST ─────────────────────────────────────── */
+#tt{position:fixed;bottom:18px;right:18px;z-index:999;display:flex;
+  flex-direction:column;gap:7px;pointer-events:none}
+.toast{padding:9px 15px;border-radius:7px;color:#fff;font-size:.82rem;font-weight:600;
+  box-shadow:0 3px 12px rgba(0,0,0,.25);pointer-events:all;
+  animation:tIn .22s ease;max-width:280px}
+.ts{background:linear-gradient(135deg,#27ae60,#2ecc71)}
+.te{background:linear-gradient(135deg,var(--r),var(--o))}
+.ti{background:linear-gradient(135deg,var(--a),var(--g))}
+@keyframes tIn{from{transform:translateX(105%);opacity:0}to{transform:none;opacity:1}}
+
+/* ─── HERO ───────────────────────────────────────── */
+.hero{background:linear-gradient(135deg,var(--dr),var(--o) 52%,var(--a));
+  color:#fff;padding:2.6rem 0 2rem;text-align:center}
+.hero h1{font-size:2rem;font-weight:800;margin-bottom:.45rem}
+.hero p{font-size:.97rem;opacity:.9;max-width:540px;margin:0 auto 1.3rem}
+.gauges{display:flex;justify-content:center;align-items:center;gap:2.2rem;
+  flex-wrap:wrap;margin-bottom:1.3rem}
+.gc{width:112px;height:112px;border-radius:50%;background:rgba(255,255,255,.13);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  border:3px solid rgba(255,255,255,.6);margin:0 auto .5rem}
+.gn{font-size:2.2rem;font-weight:800;line-height:1}
+.gl{font-size:.7rem;opacity:.82}
+.garrow{font-size:1.9rem;animation:ap 2s infinite;will-change:transform}
+@keyframes ap{0%,100%{opacity:1;transform:none}50%{opacity:.35;transform:translateX(5px)}}
+/* ticker – will-change: transform is key for GPU compositing */
+.tkwrap{background:rgba(0,0,0,.15);border-radius:8px;padding:.62rem 1rem;
+  margin-bottom:1.1rem;overflow:hidden}
+.tkinner{display:inline-flex;gap:2rem;animation:scroll 28s linear infinite;
+  will-change:transform;white-space:nowrap}
+.tkinner:hover{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.tick{font-size:.84rem;opacity:.9;display:inline-flex;align-items:center;gap:.35rem}
+.hbtns{display:flex;justify-content:center;gap:.65rem;flex-wrap:wrap}
+
+/* ─── STAT BAR ───────────────────────────────────── */
+.sbar{background:var(--sf);border-bottom:2px solid var(--bdr);padding:.9rem 0}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:.7rem;text-align:center}
+.sn{font-size:1.6rem;font-weight:800;color:var(--o)}
+.sl{font-size:.73rem;color:var(--muted);font-weight:500}
+
+/* ─── CARDS ──────────────────────────────────────── */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.1rem}
+.card{background:var(--sf);padding:1.3rem;border-radius:var(--rad);
+  box-shadow:var(--sh);border:1px solid var(--bdr);cursor:pointer;
+  transition:transform .18s,box-shadow .18s;position:relative}
+.card:hover{transform:translateY(-3px);box-shadow:0 7px 22px rgba(169,50,38,.14)}
+.card-ic{font-size:1.8rem;margin-bottom:.5rem}
+.card h3{color:var(--r);font-size:.93rem;margin-bottom:.25rem}
+.card p{color:var(--muted);font-size:.79rem}
+.cbadge{position:absolute;top:.65rem;right:.65rem;padding:.16rem .52rem;
+  border-radius:9px;font-size:.66rem;font-weight:700;background:var(--abg);color:var(--a)}
+
+/* ─── CHART WRAP ─────────────────────────────────── */
+.cw{background:var(--sf);padding:1.4rem;border-radius:var(--rad);
+  box-shadow:var(--sh);border:1px solid var(--bdr);margin-bottom:1.3rem}
+.ch{display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}
+.ct{font-size:1rem;font-weight:700;color:var(--r)}
+.ctrls{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center}
+select,.inp{padding:.38rem .62rem;border:1px solid var(--bdr);border-radius:6px;
+  font-size:.8rem;background:var(--sf);color:var(--tx);cursor:pointer}
+select:focus,.inp:focus{outline:none;border-color:var(--o);
+  box-shadow:0 0 0 2px rgba(192,86,42,.14)}
+.src{text-align:center;font-size:.73rem;color:var(--muted);margin-top:.5rem}
+.src a{color:var(--o)}
+.sh{text-align:center;margin-bottom:1.6rem}
+.sh h2{font-size:1.65rem;color:var(--r);font-weight:800;margin-bottom:.25rem}
+.sh p{color:var(--muted);max-width:520px;margin:0 auto;font-size:.88rem}
+
+/* ─── ECI TABLE ──────────────────────────────────── */
+.etbl{width:100%;border-collapse:collapse}
+.etbl th,.etbl td{padding:.45rem .55rem;border-bottom:1px solid var(--bdr);
+  font-size:.83rem;vertical-align:middle}
+.etbl th{color:var(--muted);font-size:.75rem;font-weight:600;text-align:left}
+.eidn{background:var(--abg);font-weight:700}
+.rbar{height:12px;border-radius:3px;display:inline-block;
+  transition:width .6s ease;vertical-align:middle}
+
+/* ─── CSS BAR CHART ──────────────────────────────── */
+.bars{display:flex;align-items:flex-end;gap:5px;height:170px;overflow-x:auto;
+  padding:.3rem 0}
+.bcol{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:38px}
+.bbar{border-radius:4px 4px 0 0;width:32px;cursor:pointer;position:relative;
+  transition:height .55s ease}
+.bbar:hover::after{content:attr(data-v);position:absolute;bottom:calc(100% + 3px);
+  left:50%;transform:translateX(-50%);background:var(--tx);color:#fff;
+  padding:3px 6px;border-radius:4px;font-size:.7rem;white-space:nowrap;z-index:5}
+.blbl{font-size:.66rem;color:var(--muted);text-align:center;line-height:1.2}
+
+/* ─── TREEMAP ────────────────────────────────────── */
+.tm{height:210px;display:grid;gap:3px;overflow:hidden;border-radius:6px}
+.tmc{display:flex;flex-direction:column;justify-content:flex-end;
+  padding:7px;cursor:pointer;color:#fff;border-radius:3px;transition:filter .15s}
+.tmc:hover{filter:brightness(1.08)}
+.tmp{font-size:1.15rem;font-weight:800}
+.tmn{font-size:.7rem;opacity:.88}
+.tms{font-size:.64rem;opacity:.72}
+
+/* ─── STACKED ────────────────────────────────────── */
+.skrow{display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem}
+.sklbl{font-size:.8rem;font-weight:600;width:78px;flex-shrink:0}
+.skbar{flex:1;height:26px;border-radius:3px;display:flex;overflow:hidden}
+.skseg{height:100%;display:flex;align-items:center;justify-content:center;
+  font-size:.68rem;color:#fff;font-weight:600;transition:width .7s ease}
+.skpct{font-size:.8rem;font-weight:700;width:42px;text-align:right;flex-shrink:0}
+
+/* ─── TABS ───────────────────────────────────────── */
+.tabs{display:flex;gap:.1rem;border-bottom:2px solid var(--bdr);
+  margin-bottom:1.2rem;flex-wrap:wrap}
+.tab{padding:.5rem .95rem;background:none;border:none;cursor:pointer;
+  font-weight:600;color:var(--muted);border-bottom:3px solid transparent;
+  margin-bottom:-2px;font-size:.84rem;transition:color .15s}
+.tab:hover{color:var(--o)}
+.tab.on{color:var(--r);border-bottom-color:var(--r)}
+.pnl{display:none}
+.pnl.on{display:block}
+
+/* ─── PATHWAY ────────────────────────────────────── */
+.path{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding-bottom:.4rem}
+.pnode{min-width:170px;flex:1;padding:.95rem;border-radius:var(--rad);
+  text-align:center;cursor:pointer}
+.pnode:hover{filter:brightness(1.04)}
+.plbl{font-size:.7rem;font-weight:700;margin-bottom:.22rem}
+.pname{font-size:.88rem;font-weight:700;margin-bottom:.38rem}
+.ppci{font-size:.76rem;font-weight:600;padding:.18rem .48rem;
+  border-radius:11px;display:inline-block;margin-bottom:.25rem}
+.prel{font-size:.7rem;opacity:.8}
+.parr{padding:0 .38rem;font-size:1.4rem;color:var(--a);
+  display:flex;align-items:center;flex-shrink:0}
+
+/* ─── PRODUCT SPACE SVG ──────────────────────────── */
+#pssvg{width:100%;height:400px;display:block;border-radius:8px;
+  background:var(--abg);cursor:crosshair}
+.dk #pssvg{background:#1A0E08}
+
+/* ─── SIMULATOR ──────────────────────────────────── */
+.sim{background:var(--sf);padding:1.4rem;border-radius:var(--rad);
+  box-shadow:var(--sh);border:1px solid var(--bdr);margin-bottom:1rem}
+.simtit{color:var(--r);font-size:1.05rem;font-weight:700;margin-bottom:.18rem}
+.simsub{color:var(--muted);font-size:.82rem;margin-bottom:1rem}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+@media(max-width:520px){.r2{grid-template-columns:1fr}}
+.fg{margin-bottom:.95rem;position:relative}
+.fg label{display:block;margin-bottom:.3rem;font-weight:600;font-size:.84rem}
+.fg input,.fg select{width:100%;padding:.58rem .75rem;
+  border:1.5px solid var(--bdr);border-radius:6px;font-size:.9rem;
+  background:var(--sf);color:var(--tx)}
+.fg input:focus,.fg select:focus{outline:none;border-color:var(--o);
+  box-shadow:0 0 0 2px rgba(192,86,42,.12)}
+.acd{background:var(--sf);border:1px solid var(--bdr);border-radius:6px;
+  position:absolute;top:calc(100% + 2px);left:0;right:0;z-index:50;
+  box-shadow:0 5px 18px rgba(0,0,0,.12);max-height:190px;overflow-y:auto}
+.aci{padding:.55rem .85rem;cursor:pointer;font-size:.86rem;
+  border-bottom:1px solid var(--bdr)}
+.aci:hover{background:var(--abg)}
+.aci small{color:var(--muted);font-size:.74rem}
+.rb{background:var(--abg);border-left:4px solid var(--o);
+  border-radius:0 var(--rad) var(--rad) 0;padding:1.1rem;margin-top:1rem}
+.rr{display:flex;justify-content:space-between;align-items:center;
+  padding:.38rem 0;border-bottom:1px solid var(--bdr)}
+.rr:last-child{border:none}
+.rl{font-weight:600;font-size:.84rem}
+.rv{color:var(--o);font-weight:700;font-size:.9rem}
+.tp{padding:.28rem .82rem;border-radius:12px;font-weight:700;font-size:.84rem}
+.tp1{background:var(--rbg);color:var(--r)}
+.tp2{background:var(--obg);color:var(--o)}
+.tp3{background:var(--abg);color:var(--a)}
+
+/* ─── YIF ────────────────────────────────────────── */
+.ystats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:.85rem;margin:1.1rem 0}
+.yst{background:linear-gradient(135deg,var(--o),var(--a));color:#fff;
+  padding:1rem;border-radius:var(--rad);text-align:center}
+.yn{font-size:1.8rem;font-weight:800;margin-bottom:.12rem}
+.yl{font-size:.76rem;opacity:.9}
+.pw{background:var(--bdr);height:26px;border-radius:13px;overflow:hidden;margin:.65rem 0}
+.pf{height:100%;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;font-size:.82rem;border-radius:13px;width:0;
+  background:linear-gradient(90deg,var(--r),var(--o));transition:width 1s ease}
+
+/* ─── COI ────────────────────────────────────────── */
+.coig{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+@media(max-width:640px){.coig{grid-template-columns:1fr}}
+.coic{background:var(--sf);padding:1.3rem;border-radius:var(--rad);
+  box-shadow:var(--sh);border:1px solid var(--bdr)}
+.coic h3{color:var(--r);font-size:.95rem;margin-bottom:.7rem}
+.tpi{display:flex;justify-content:space-between;align-items:center;
+  padding:.5rem .68rem;border-radius:5px;margin-bottom:.38rem;
+  background:var(--abg);cursor:pointer;font-size:.82rem;transition:background .15s}
+.tpi:hover{background:var(--obg)}
+.tbg{font-size:.66rem;font-weight:700;padding:.15rem .48rem;border-radius:9px}
+.ton{background:#d4edda;color:#155724}
+.tpr{background:#fff3cd;color:#856404}
+.tpl{background:var(--rbg);color:var(--r)}
+.ni{padding:.5rem 0;border-bottom:1px solid var(--bdr);font-size:.82rem}
+.nd{color:var(--a);font-weight:700;margin-right:.45rem;font-size:.76rem}
+
+/* ─── PSNI ───────────────────────────────────────── */
+.psni-wrap{display:flex;align-items:center;gap:1.2rem;margin:.5rem 0}
+.psni-ring{width:110px;height:110px;position:relative;flex-shrink:0}
+.psni-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+
+/* ─── LEARNING ───────────────────────────────────── */
+.mods{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.1rem}
+.modc{background:var(--sf);padding:1.3rem;border-radius:var(--rad);
+  box-shadow:var(--sh);border:1px solid var(--bdr)}
+.modc h3{color:var(--r);font-size:.93rem;margin-bottom:.28rem}
+.mmeta{display:flex;gap:.55rem;flex-wrap:wrap;margin:.35rem 0;font-size:.75rem;color:var(--muted)}
+.mpb{background:var(--bdr);height:6px;border-radius:3px;margin:.55rem 0 .8rem}
+.mpbf{height:100%;border-radius:3px;
+  background:linear-gradient(90deg,var(--r),var(--o));transition:.6s}
+.lb{padding:.16rem .52rem;border-radius:9px;font-size:.68rem;font-weight:700}
+.lbf{background:#d4edda;color:#155724}
+.lbb{background:#cce5ff;color:#004085}
+.lbi{background:#fff3cd;color:#856404}
+.lba{background:var(--rbg);color:var(--r)}
+
+/* ─── QUIZ ───────────────────────────────────────── */
+.qq{font-weight:700;margin-bottom:.7rem;font-size:.92rem}
+.qopts{display:flex;flex-direction:column;gap:.42rem}
+.qopt{padding:.55rem .85rem;border:1.5px solid var(--bdr);border-radius:6px;
+  cursor:pointer;font-size:.86rem;background:var(--sf);transition:border-color .12s;text-align:left}
+.qopt:hover:not(:disabled){border-color:var(--o);background:var(--abg)}
+.qok{border-color:#27ae60!important;background:#d4edda!important;color:#155724;font-weight:600}
+.qno{border-color:var(--r)!important;background:var(--rbg)!important;color:var(--r)}
+.qfb{margin-top:.65rem;padding:.55rem .85rem;border-radius:6px;font-size:.82rem;font-weight:500}
+.qprog{background:var(--bdr);height:6px;border-radius:3px;margin:.45rem 0 .8rem}
+.qprogf{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--r),var(--o));transition:.4s}
+
+/* ─── COMPARE ────────────────────────────────────── */
+.cmpg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.75rem;margin-top:.85rem}
+.cmpc{border:2px solid var(--bdr);border-radius:var(--rad);padding:.85rem;
+  text-align:center;background:var(--abg);position:relative}
+.cmpc h4{color:var(--r);font-size:.85rem;margin-bottom:.25rem}
+.cmpn{font-size:1.5rem;font-weight:800;color:var(--o);margin:.25rem 0}
+.cmprm{position:absolute;top:.28rem;right:.4rem;background:none;border:none;
+  color:var(--muted);cursor:pointer;font-size:.9rem}
+
+/* ─── MODAL ──────────────────────────────────────── */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.58);
+  z-index:2000;justify-content:center;align-items:center}
+.modal.op{display:flex}
+.mb{background:var(--sf);padding:1.7rem;border-radius:var(--rad);
+  max-width:460px;width:92%;max-height:88vh;overflow-y:auto;
+  box-shadow:0 16px 48px rgba(0,0,0,.3);animation:mi .22s ease}
+@keyframes mi{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+.mhd{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem}
+.mhd h2{font-size:1.15rem;color:var(--r)}
+.xb{background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--muted);line-height:1}
+.xb:hover{color:var(--r)}
+
+/* ─── FOOTER ─────────────────────────────────────── */
+footer{background:#1A0A00;color:#c0a070;padding:2.2rem 0 .9rem;margin-top:1.5rem}
+.fg2{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:1.4rem;margin-bottom:1.3rem}
+footer h3{color:var(--a);margin-bottom:.55rem;font-size:.9rem}
+footer ul{list-style:none}
+footer li{margin-bottom:.32rem}
+footer a{color:#c0a070;font-size:.82rem;text-decoration:none;transition:color .15s}
+footer a:hover{color:#fff}
+.fbot{border-top:1px solid rgba(255,255,255,.07);padding-top:.9rem;
+  text-align:center;font-size:.76rem;opacity:.6}
+
+/* ─── 2-col layout ───────────────────────────────── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+@media(max-width:640px){.g2{grid-template-columns:1fr}}
+</style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body class="">
+<div id="sp" style="width: 1.02235%;"></div>
+<div id="tt"></div>
+
+<!-- HEADER -->
+<header>
+<div class="w nav">
+  <div class="logo">🌿 GreenLeap ID <sup>Beta</sup></div>
+  <ul class="nl" id="nav">
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#home" class="on">Home</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#dash" class="">Dashboard</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#ps" class="">Product Space</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#sim" class="">Simulator</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#yif" class="">YIF</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#coi" class="">COI</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#learn">Learn</a></li>
+  </ul>
+  <div class="nr">
+    <button class="dbtn" id="dkb" onclick="toggleDk()">🌙</button>
+    <button class="btn bo" onclick="openM(&#39;mlog&#39;)">Masuk</button>
+    <button class="btn bw" onclick="openM(&#39;mreg&#39;)">Daftar</button>
+    <button class="hm" onclick="document.getElementById(&#39;nav&#39;).classList.toggle(&#39;op&#39;)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="w">
+  <h1>Indonesia Green Complexity Navigator</h1>
+  <p>Platform data OEC untuk mendorong lompatan ECI Indonesia dari <strong>#55 → #40</strong> pada 2035</p>
+  <p style="font-size:.85rem;opacity:.82;margin-top:.2rem">Oleh : <strong>Ricky Dina Rajendra</strong> ⚲ Politeknik Keuangan Negara STAN</p>
+  <div class="gauges">
+    <div>
+      <div class="gc"><div class="gn">#55</div><div class="gl">ECI 2024</div></div>
+      <small style="opacity:.78">Indonesia kini</small>
+    </div>
+    <div class="garrow">→</div>
+    <div>
+      <div class="gc" style="border-color:#F0B429"><div class="gn">#40</div><div class="gl">Target 2035</div></div>
+      <small style="opacity:.78">Lompatan hijau</small>
+    </div>
+  </div>
+  <div class="tkwrap">
+    <div class="tkinner">
+      <span class="tick">🗐 Data OEC Februari 2026</span><span style="opacity:.3">|</span>
+      <span class="tick">🇻🇳 Vietnam #89→#47 (24 thn)</span><span style="opacity:.3">|</span>
+      <span class="tick">🇲🇾 Malaysia #48→#28 (24 thn)</span><span style="opacity:.3">|</span>
+      <span class="tick">🇮🇩 Indonesia #55→#55 stagnan</span><span style="opacity:.3">|</span>
+      <span class="tick">🪨 Nikel ore $60 → cathode $18.000/ton (×300)</span><span style="opacity:.3">|</span>
+      <span class="tick">⚠ +1 SD ECI = +4–7% GDP growth/thn (Hidalgo &amp; Hausmann, 2009)</span><span style="opacity:.3">|</span>
+      <span class="tick">🗐 Data OEC Februari 2026</span><span style="opacity:.3">|</span>
+      <span class="tick">🇻🇳 Vietnam #89→#47 (24 thn)</span><span style="opacity:.3">|</span>
+      <span class="tick">🇲🇾 Malaysia #48→#28 (24 thn)</span><span style="opacity:.3">|</span>
+      <span class="tick">🇮🇩 Indonesia #55→#55 stagnan</span>
+    </div>
+  </div>
+  <div class="hbtns">
+    <button class="btn bw" onclick="go(&#39;dash&#39;)">Dashboard</button>
+    <button class="btn bo" onclick="go(&#39;ps&#39;)">Product Space</button>
+    <button class="btn bo" onclick="go(&#39;sim&#39;)">Simulator</button>
+  </div>
+</div>
+</section>
+
+<!-- STAT BAR -->
+<div class="sbar">
+<div class="w">
+<div class="sgrid">
+  <div><div class="sn">133</div><div class="sl">Negara Dibandingkan</div></div>
+  <div><div class="sn">8.200+</div><div class="sl">Produk Dianalisis</div></div>
+  <div><div class="sn" id="sc">0</div><div class="sl">Simulasi Dijalankan</div></div>
+  <div><div class="sn">30+</div><div class="sl">Tahun Data OEC</div></div>
+  <div><div class="sn">CC0</div><div class="sl">Lisensi Public Domain</div></div>
+  <div><div class="sn">100%</div><div class="sl">Fitur Gratis Terbuka</div></div>
+</div>
+</div>
+</div>
+
+<!-- QUICK CARDS -->
+<section style="padding:2rem 0">
+<div class="w">
+<div class="cards">
+  <div class="card" onclick="go(&#39;dash&#39;)"><div class="card-ic">🗁</div><h3>ECI Dashboard</h3><p>Tren ECI ASEAN, treemap ekspor, stacked bar komposisi</p></div>
+  <div class="card" onclick="go(&#39;ps&#39;)"><div class="card-ic">ᯤ</div><h3>Product Space</h3><p>Jaringan produk, stepping stone, relatedness OEC</p></div>
+  <div class="card" onclick="go(&#39;sim&#39;)"><div class="card-ic">⌨</div><h3>Policy Simulators</h3><p>Tax Holiday, YIF Eligibility, Tariff Impact</p><span class="cbadge">3 Tools</span></div>
+  <div class="card" onclick="go(&#39;yif&#39;)"><div class="card-ic">모</div><h3>YIF Tracker</h3><p>Pantau alokasi Youth Innovation Fund</p></div>
+  <div class="card" onclick="go(&#39;learn&#39;)"><div class="card-ic">🗐</div><h3>OEC Literacy</h3><p>4 modul gratis, kuis interaktif, sertifikat</p><span class="cbadge">Free</span></div>
+</div>
+</div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dash">
+<div class="w">
+<div class="sh"><h2>🗁 ECI &amp; PCI Dashboard</h2><p>Data OEC (oec.world) ▶ CC0 Public Domain</p></div>
+
+<!-- ECI TABLE -->
+<div class="cw">
+  <div class="ch">
+    <span class="ct">ECI Ranking ASEAN+ (2000→2024)</span>
+    <div class="ctrls">
+      <select onchange="buildECI(this.value)">
+        <option value="all">Semua Negara</option>
+        <option value="asean">ASEAN Saja</option>
+      </select>
+      <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem" onclick="toast(&#39;Data ECI diexport sebagai CSV&#39;,&#39;s&#39;)">📊 CSV</button>
+    </div>
+  </div>
+  <div style="overflow-x:auto"><table class="etbl"><thead>
+    <tr><th>Negara</th><th>2000</th><th>2010</th><th>2020</th><th>2024</th><th>Δ 24 Thn</th><th>Tren</th></tr>
+  </thead><tbody id="eciT"><tr class="eidn">
+      <td><span style="color:#A93226">●</span> <strong>Indonesia</strong></td>
+      <td>#55</td><td>#56</td><td>#55</td><td><strong>#55</strong></td>
+      <td style="color:#888;font-weight:700">→ 0</td>
+      <td><span class="rbar" style="width:68px;background:#A93226"></span></td>
+    </tr><tr class="">
+      <td><span style="color:#E8A210">●</span> Vietnam</td>
+      <td>#89</td><td>#67</td><td>#50</td><td><strong>#47</strong></td>
+      <td style="color:#27ae60;font-weight:700">▲ +42</td>
+      <td><span class="rbar" style="width:80px;background:#E8A210"></span></td>
+    </tr><tr class="">
+      <td><span style="color:#3498db">●</span> Malaysia</td>
+      <td>#48</td><td>#40</td><td>#31</td><td><strong>#28</strong></td>
+      <td style="color:#27ae60;font-weight:700">▲ +20</td>
+      <td><span class="rbar" style="width:108px;background:#3498db"></span></td>
+    </tr><tr class="">
+      <td><span style="color:#27ae60">●</span> Thailand</td>
+      <td>#53</td><td>#46</td><td>#39</td><td><strong>#37</strong></td>
+      <td style="color:#27ae60;font-weight:700">▲ +16</td>
+      <td><span class="rbar" style="width:95px;background:#27ae60"></span></td>
+    </tr><tr class="">
+      <td><span style="color:#1abc9c">●</span> Singapura</td>
+      <td>#25</td><td>#20</td><td>#19</td><td><strong>#21</strong></td>
+      <td style="color:#E8A210;font-weight:700">▲ +4</td>
+      <td><span class="rbar" style="width:119px;background:#1abc9c"></span></td>
+    </tr><tr class="">
+      <td><span style="color:#9b59b6">●</span> Korea Selatan</td>
+      <td>#12</td><td>#8</td><td>#5</td><td><strong>#4</strong></td>
+      <td style="color:#E8A210;font-weight:700">▲ +8</td>
+      <td><span class="rbar" style="width:144px;background:#9b59b6"></span></td>
+    </tr><tr class="">
+      <td><span style="color:#C0562A">●</span> Jepang</td>
+      <td>#1</td><td>#1</td><td>#1</td><td><strong>#1</strong></td>
+      <td style="color:#888;font-weight:700">→ 0</td>
+      <td><span class="rbar" style="width:149px;background:#C0562A"></span></td>
+    </tr><tr class="">
+      <td><span style="color:#7B241C">●</span> Jerman</td>
+      <td>#4</td><td>#3</td><td>#3</td><td><strong>#3</strong></td>
+      <td style="color:#E8A210;font-weight:700">▲ +1</td>
+      <td><span class="rbar" style="width:146px;background:#7B241C"></span></td>
+    </tr></tbody></table></div>
+  <div class="src">Sumber: <a href="https://oec.world/en/rankings/eci/hs6/hs96" target="_blank">OEC ECI Rankings hs6/hs96</a></div>
+</div>
+
+<!-- TREEMAP + STACKED -->
+<div class="g2">
+<div class="cw" style="margin-bottom:0">
+  <div class="ch">
+    <span class="ct">Treemap Ekspor Indonesia per Tier PCI</span>
+    <select onchange="buildTM(this.value)">
+      <option>2024</option><option>2020</option><option>2015</option><option>2010</option><option>2000</option>
+    </select>
+  </div>
+  <div class="tm" id="tm" style="grid-template-columns: 32fr 27fr 20fr 21fr;"><div class="tmc" style="background:#A93226" onclick="toast(&#39;Komoditas Mentah: 32% ekspor | PCI&lt;0&#39;,&#39;i&#39;)">
+      <div class="tmp">32%</div><div class="tmn">Komoditas Mentah</div><div class="tms">PCI&lt;0</div>
+    </div><div class="tmc" style="background:#C0562A" onclick="toast(&#39;Manufaktur Dasar: 27% ekspor | PCI 0–0.5&#39;,&#39;i&#39;)">
+      <div class="tmp">27%</div><div class="tmn">Manufaktur Dasar</div><div class="tms">PCI 0–0.5</div>
+    </div><div class="tmc" style="background:#D4880A" onclick="toast(&#39;Menengah: 20% ekspor | PCI 0.5–1&#39;,&#39;i&#39;)">
+      <div class="tmp">20%</div><div class="tmn">Menengah</div><div class="tms">PCI 0.5–1</div>
+    </div><div class="tmc" style="background:#E8A210" onclick="toast(&#39;Kompleks: 21% ekspor | PCI&gt;1&#39;,&#39;i&#39;)">
+      <div class="tmp">21%</div><div class="tmn">Kompleks</div><div class="tms">PCI&gt;1</div>
+    </div></div>
+  <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.6rem;font-size:.71rem">
+    <span>🔴 Komoditas (PCI&lt;0)</span><span>🟠 Manufaktur Dasar</span>
+    <span>🟡 Menengah</span><span>🟢 Kompleks (PCI&gt;1)</span>
+  </div>
+  <div class="src">Sumber: <a href="https://oec.world/en/profile/country/idn" target="_blank">OEC Profile Indonesia</a></div>
+</div>
+
+<div class="cw" style="margin-bottom:0">
+  <div class="ch">
+    <span class="ct">Komposisi Ekspor per Tier PCI</span>
+    <select onchange="buildStk(this.value)">
+      <option value="idn">Indonesia</option><option value="vnm">Vietnam</option>
+    </select>
+  </div>
+  <div id="stkD"><div class="skrow"><span class="sklbl">IDN 2000</span>
+      <div class="skbar"><div class="skseg" style="width:42%;background:#A93226">42%</div><div class="skseg" style="width:32%;background:#C0562A">32%</div><div class="skseg" style="width:16%;background:#D4880A">16%</div><div class="skseg" style="width:8%;background:#E8A210"></div><div class="skseg" style="width:2%;background:#27ae60"></div></div>
+      <span class="skpct" style="color:#A93226">10%</span></div><div class="skrow"><span class="sklbl">IDN 2010</span>
+      <div class="skbar"><div class="skseg" style="width:45%;background:#A93226">45%</div><div class="skseg" style="width:30%;background:#C0562A">30%</div><div class="skseg" style="width:14%;background:#D4880A">14%</div><div class="skseg" style="width:9%;background:#E8A210">9%</div><div class="skseg" style="width:2%;background:#27ae60"></div></div>
+      <span class="skpct" style="color:#A93226">11%</span></div><div class="skrow"><span class="sklbl">IDN 2020</span>
+      <div class="skbar"><div class="skseg" style="width:38%;background:#A93226">38%</div><div class="skseg" style="width:28%;background:#C0562A">28%</div><div class="skseg" style="width:18%;background:#D4880A">18%</div><div class="skseg" style="width:13%;background:#E8A210">13%</div><div class="skseg" style="width:3%;background:#27ae60"></div></div>
+      <span class="skpct" style="color:#A93226">16%</span></div><div class="skrow"><span class="sklbl">IDN 2024</span>
+      <div class="skbar"><div class="skseg" style="width:32%;background:#A93226">32%</div><div class="skseg" style="width:27%;background:#C0562A">27%</div><div class="skseg" style="width:20%;background:#D4880A">20%</div><div class="skseg" style="width:17%;background:#E8A210">17%</div><div class="skseg" style="width:4%;background:#27ae60"></div></div>
+      <span class="skpct" style="color:#A93226">21%</span></div></div>
+  <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.6rem;font-size:.71rem">
+    <span style="display:flex;align-items:center;gap:.25rem"><span style="width:10px;height:10px;background:#A93226;border-radius:2px"></span>Sangat Rendah</span>
+    <span style="display:flex;align-items:center;gap:.25rem"><span style="width:10px;height:10px;background:#C0562A;border-radius:2px"></span>Rendah</span>
+    <span style="display:flex;align-items:center;gap:.25rem"><span style="width:10px;height:10px;background:#D4880A;border-radius:2px"></span>Menengah</span>
+    <span style="display:flex;align-items:center;gap:.25rem"><span style="width:10px;height:10px;background:#E8A210;border-radius:2px"></span>Tinggi</span>
+    <span style="display:flex;align-items:center;gap:.25rem"><span style="width:10px;height:10px;background:#27ae60;border-radius:2px"></span>Sangat Tinggi</span>
+  </div>
+</div>
+</div>
+
+<!-- GDP BAR CHART -->
+<div class="cw" style="margin-top:1.2rem">
+  <div class="ch"><span class="ct">ECI vs Rata-rata Pertumbuhan GDP — ASEAN+</span></div>
+  <div class="bars" id="gdpB"><div class="bcol">
+      <div class="bbar" style="height:22px;background:#C0562A;min-height:5px;border:" data-v="Jepang: GDP growth 1.2% | ECI Rank #1"></div>
+      <span class="blbl">Jepang</span></div><div class="bcol">
+      <div class="bbar" style="height:33px;background:#7B241C;min-height:5px;border:" data-v="Jerman: GDP growth 1.8% | ECI Rank #3"></div>
+      <span class="blbl">Jerman</span></div><div class="bcol">
+      <div class="bbar" style="height:83px;background:#9b59b6;min-height:5px;border:" data-v="Korea Sel.: GDP growth 4.5% | ECI Rank #8"></div>
+      <span class="blbl">Korea Sel.</span></div><div class="bcol">
+      <div class="bbar" style="height:78px;background:#1abc9c;min-height:5px;border:" data-v="Singapura: GDP growth 4.2% | ECI Rank #21"></div>
+      <span class="blbl">Singapura</span></div><div class="bcol">
+      <div class="bbar" style="height:89px;background:#3498db;min-height:5px;border:" data-v="Malaysia: GDP growth 4.8% | ECI Rank #28"></div>
+      <span class="blbl">Malaysia</span></div><div class="bcol">
+      <div class="bbar" style="height:139px;background:#e74c3c;min-height:5px;border:" data-v="China: GDP growth 7.5% | ECI Rank #30"></div>
+      <span class="blbl">China</span></div><div class="bcol">
+      <div class="bbar" style="height:65px;background:#27ae60;min-height:5px;border:" data-v="Thailand: GDP growth 3.5% | ECI Rank #37"></div>
+      <span class="blbl">Thailand</span></div><div class="bcol">
+      <div class="bbar" style="height:120px;background:#E8A210;min-height:5px;border:" data-v="Vietnam: GDP growth 6.5% | ECI Rank #47"></div>
+      <span class="blbl">Vietnam</span></div><div class="bcol">
+      <div class="bbar" style="height:111px;background:#f39c12;min-height:5px;border:" data-v="India: GDP growth 6% | ECI Rank #47"></div>
+      <span class="blbl">India</span></div><div class="bcol">
+      <div class="bbar" style="height:102px;background:#16a085;min-height:5px;border:" data-v="Filipina: GDP growth 5.5% | ECI Rank #55"></div>
+      <span class="blbl">Filipina</span></div><div class="bcol">
+      <div class="bbar" style="height:94px;background:#A93226;min-height:5px;border:3px solid #7B241C" data-v="Indonesia: GDP growth 5.1% | ECI Rank #55"></div>
+      <span class="blbl">Indonesia</span></div></div>
+  <div class="src">Sumber: <a href="https://oec.world/en/resources/methods/eci-growth-predictions" target="_blank">OEC Growth Forecasts</a> | Hidalgo &amp; Hausmann, PNAS (2009)</div>
+</div>
+
+</div>
+</section>
+
+<!-- PRODUCT SPACE -->
+<section id="ps">
+<div class="w">
+<div class="sh"><h2>ᯤ Product Space Navigator</h2><p>Klik node untuk detail. Filter per sektor atau PCI tier.</p></div>
+
+<div class="cw">
+  <div class="ch">
+    <span class="ct">Jaringan Kompleksitas Produk Global</span>
+    <div class="ctrls">
+      <select id="psf" onchange="filterPS()">
+        <option value="all">Semua</option>
+        <option value="nickel">Nikel</option>
+        <option value="palm">Kelapa Sawit</option>
+        <option value="rubber">Karet</option>
+        <option value="idn">Hanya IDN</option>
+        <option value="target">Hanya Target</option>
+      </select>
+    </div>
+  </div>
+  <svg id="pssvg" viewBox="0 0 760 390" xmlns="http://www.w3.org/2000/svg"><defs>
+    <radialgradient id="bg"><stop offset="0%" stop-color="#FEF0D8" stop-opacity=".6"></stop>
+      <stop offset="100%" stop-color="#FDF4E8" stop-opacity="0"></stop></radialgradient>
+  </defs>
+  <rect width="760" height="390" fill="url(#bg)"></rect>
+  <ellipse cx="380" cy="195" rx="98.8" ry="54.60000000000001" fill="rgba(169,50,38,.04)"></ellipse>
+  <ellipse cx="380" cy="195" rx="167.2" ry="93.6" fill="rgba(169,50,38,.025)"></ellipse>
+  <text x="380" y="132.6" text-anchor="middle" font-size="9" fill="rgba(169,50,38,.25)">INTI</text>
+  <text x="380" y="300.3" text-anchor="middle" font-size="9" fill="rgba(169,50,38,.15)">PINGGIRAN</text><line x1="144.4" y1="97.5" x2="243.20000000000002" y2="159.89999999999998" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="167.2" y1="132.60000000000002" x2="243.20000000000002" y2="159.89999999999998" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="144.4" y1="97.5" x2="220.39999999999998" y2="136.5" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="167.2" y1="132.60000000000002" x2="220.39999999999998" y2="136.5" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="144.4" y1="97.5" x2="258.40000000000003" y2="128.70000000000002" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="167.2" y1="132.60000000000002" x2="258.40000000000003" y2="128.70000000000002" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="615.6" y1="109.20000000000002" x2="494" y2="140.4" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="615.6" y1="109.20000000000002" x2="516.8000000000001" y2="249.6" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="152" y1="265.20000000000005" x2="258.40000000000003" y2="273" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><line x1="152" y1="265.20000000000005" x2="228" y2="245.7" stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"></line><circle cx="380" cy="183.29999999999998" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="nickel" data-t="target" onclick="toast(&#39;Battery Cathode | PCI 1.7 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="418.00000000000006" cy="202.8" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="elec" data-t="target" onclick="toast(&#39;EV Motor | PCI 1.6 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="380" cy="214.50000000000003" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="chem" data-t="target" onclick="toast(&#39;Katalis | PCI 1.5 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="334.4" cy="206.70000000000002" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="elec" data-t="target" onclick="toast(&#39;Solar Panel | PCI 1.5 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="357.2" cy="167.7" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="rubber" data-t="target" onclick="toast(&#39;Kateter Medis | PCI 1.8 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="402.8" cy="163.79999999999998" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="elec" data-t="target" onclick="toast(&#39;IoT Device | PCI 1.4 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="311.59999999999997" cy="183.29999999999998" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="nickel" data-t="target" onclick="toast(&#39;Precision Alloy | PCI 1.4 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="448.4" cy="163.79999999999998" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="palm" data-t="target" onclick="toast(&#39;Oleokimia | PCI 1.1 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="478.8" cy="187.2" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="palm" data-t="target" onclick="toast(&#39;Pharma Excip. | PCI 1.3 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="266" cy="226.2" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="rubber" data-t="target" onclick="toast(&#39;Lateks Medis | PCI 1.4 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="288.8" cy="245.7" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="rubber" data-t="target" onclick="toast(&#39;Karet Teknik | PCI 1.2 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="494" cy="218.40000000000003" r="7" fill="#27ae60bb" stroke="#1e8449" stroke-width="2" class="psn" data-s="palm" data-t="target" onclick="toast(&#39;Kosmetik | PCI 1.3 | Produk Target&#39;,&#39;i&#39;)"></circle><circle cx="380" cy="156" r="5" fill="#3498dbbb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Semikonduktor | PCI 2.1 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="410.40000000000003" cy="144.3" r="5" fill="#3498dbbb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Farmasi | PCI 1.8 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="334.4" cy="148.2" r="5" fill="#3498dbbb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Optik Presisi | PCI 1.9 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="357.2" cy="136.5" r="5" fill="#3498dbbb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Mesin Presisi | PCI 1.9 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="243.20000000000002" cy="159.89999999999998" r="7" fill="#E8A210bb" stroke="#C0562A" stroke-width="1.5" stroke-dasharray="3,3" class="psn" data-s="nickel" data-t="stepping" onclick="toast(&#39;Nikel Sulfat | PCI 0.7 | Stepping Stone&#39;,&#39;i&#39;)"></circle><circle cx="220.39999999999998" cy="136.5" r="7" fill="#E8A210bb" stroke="#C0562A" stroke-width="1.5" stroke-dasharray="3,3" class="psn" data-s="nickel" data-t="stepping" onclick="toast(&#39;MHP | PCI 0.6 | Stepping Stone&#39;,&#39;i&#39;)"></circle><circle cx="258.40000000000003" cy="128.70000000000002" r="7" fill="#E8A210bb" stroke="#C0562A" stroke-width="1.5" stroke-dasharray="3,3" class="psn" data-s="nickel" data-t="stepping" onclick="toast(&#39;Stainless Steel | PCI 0.9 | Stepping Stone&#39;,&#39;i&#39;)"></circle><circle cx="494" cy="140.4" r="7" fill="#E8A210bb" stroke="#C0562A" stroke-width="1.5" stroke-dasharray="3,3" class="psn" data-s="palm" data-t="stepping" onclick="toast(&#39;Biodiesel | PCI 0.8 | Stepping Stone&#39;,&#39;i&#39;)"></circle><circle cx="516.8000000000001" cy="249.6" r="7" fill="#E8A210bb" stroke="#C0562A" stroke-width="1.5" stroke-dasharray="3,3" class="psn" data-s="palm" data-t="stepping" onclick="toast(&#39;Olein Sawit | PCI 0.3 | Stepping Stone&#39;,&#39;i&#39;)"></circle><circle cx="258.40000000000003" cy="273" r="7" fill="#E8A210bb" stroke="#C0562A" stroke-width="1.5" stroke-dasharray="3,3" class="psn" data-s="rubber" data-t="stepping" onclick="toast(&#39;Ban EV | PCI 1 | Stepping Stone&#39;,&#39;i&#39;)"></circle><circle cx="228" cy="245.7" r="7" fill="#E8A210bb" stroke="#C0562A" stroke-width="1.5" stroke-dasharray="3,3" class="psn" data-s="rubber" data-t="stepping" onclick="toast(&#39;Karet Gloves | PCI 0.7 | Stepping Stone&#39;,&#39;i&#39;)"></circle><circle cx="144.4" cy="97.5" r="9" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="nickel" data-t="idn" onclick="toast(&#39;Nikel Ore ★ | PCI -0.8 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="144.4" y="85.5" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">Nikel Ore</text><circle cx="98.8" cy="148.2" r="9" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="energy" data-t="idn" onclick="toast(&#39;Batu Bara ★ | PCI -0.8 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="98.8" y="136.2" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">Batu Bara</text><circle cx="615.6" cy="109.20000000000002" r="9" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="palm" data-t="idn" onclick="toast(&#39;CPO ★ | PCI -0.3 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="615.6" y="97.20000000000002" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">CPO</text><circle cx="167.2" cy="132.60000000000002" r="9" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="nickel" data-t="idn" onclick="toast(&#39;Ferronickel ★ | PCI -0.2 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="167.2" y="120.60000000000002" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">Ferronickel</text><circle cx="152" cy="265.20000000000005" r="7" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="rubber" data-t="idn" onclick="toast(&#39;Karet Alam ★ | PCI 0.1 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="152" y="255.20000000000005" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">Karet Alam</text><circle cx="114" cy="202.8" r="7" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="other" data-t="idn" onclick="toast(&#39;Bauksit ★ | PCI -0.6 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="114" y="192.8" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">Bauksit</text><circle cx="205.20000000000002" cy="312" r="7" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="other" data-t="idn" onclick="toast(&#39;Tekstil Dasar ★ | PCI 0.2 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="205.20000000000002" y="302" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">Tekstil Dasar</text><circle cx="554.8" cy="312" r="7" fill="#A93226bb" stroke="#7B241C" stroke-width="2.5" class="psn" data-s="other" data-t="idn" onclick="toast(&#39;Kayu Olahan ★ | PCI 0 | Ekspor IDN&#39;,&#39;i&#39;)"></circle><text x="554.8" y="302" text-anchor="middle" font-size="8" font-weight="600" fill="rgba(26,4,0,.7)">Kayu Olahan</text><circle cx="76" cy="109.20000000000002" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Gas Alam | PCI -0.5 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="661.2" cy="163.79999999999998" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Kakao | PCI -0.2 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="653.6" cy="210.60000000000002" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Kopi | PCI -0.3 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="98.8" cy="241.8" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Timah Ore | PCI -0.4 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="638.4" cy="249.6" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Rempah | PCI -0.1 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="121.60000000000001" cy="292.5" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Kayu Log | PCI -0.6 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="547.1999999999999" cy="331.5" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Furniture | PCI 0.2 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="570" cy="136.5" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Pupuk | PCI 0.1 | Produk Lain&#39;,&#39;i&#39;)"></circle><circle cx="501.6" cy="292.5" r="5" fill="#9A8060bb" stroke="transparent" stroke-width="0" class="psn" data-s="other" data-t="other" onclick="toast(&#39;Kendaraan BBM | PCI 0.7 | Produk Lain&#39;,&#39;i&#39;)"></circle></svg>
+  <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:.7rem;font-size:.76rem">
+    <span>🔴 Ekspor IDN (RCA≥1)</span>
+    <span>🟡 Stepping Stone</span>
+    <span>🟢 Produk Target</span>
+    <span>🔵 Kompleks Tinggi</span>
+    <span>⚫ Lainnya</span>
+  </div>
+  <div class="src">Sumber: <a href="https://oec.world/en/profile/country/idn#complexity" target="_blank">OEC Product Space Indonesia</a> | Hidalgo et al., Science 317 (2007)</div>
+</div>
+
+<!-- STEPPING STONE -->
+<div class="cw">
+  <span class="ct" style="display:block;margin-bottom:.9rem">Stepping Stone Pathway Mapper</span>
+  <div class="tabs">
+    <button class="tab on" onclick="ptab(this,&#39;p1&#39;)">Nikel</button>
+    <button class="tab" onclick="ptab(this,&#39;p2&#39;)">Kelapa Sawit</button>
+    <button class="tab" onclick="ptab(this,&#39;p3&#39;)">Karet</button>
+  </div>
+
+  <div class="pnl on" id="p1">
+    <div class="path">
+      <div class="pnode" style="background:var(--rbg);border:2px solid var(--r)">
+        <div class="plbl" style="color:var(--muted)">POSISI SAAT INI</div>
+        <div class="pname" style="color:var(--r)">Nikel Ore / Ferronickel</div>
+        <span class="ppci" style="background:var(--rbg);color:var(--r)">PCI ≈ −0.8</span>
+        <div class="prel">RCA&gt;1 ✓ | #1 dunia</div>
+      </div><div class="parr">→</div>
+      <div class="pnode" style="background:var(--abg);border:2px dashed var(--a)">
+        <div class="plbl" style="color:var(--a)">BATU LONCATAN</div>
+        <div class="pname">Nikel Sulfat / MHP</div>
+        <span class="ppci" style="background:var(--abg);color:var(--a)">PCI ≈ +0.3–+0.7</span>
+        <div class="prel">Relatedness: 0.82</div>
+      </div><div class="parr">→</div>
+      <div class="pnode" style="background:#d4edda;border:2px solid #27ae60">
+        <div class="plbl" style="color:#27ae60">TARGET PRODUK</div>
+        <div class="pname" style="color:#155724">Battery Cathode Precursor</div>
+        <span class="ppci" style="background:#d4edda;color:#155724">PCI ≈ +1.4–+1.8</span>
+        <div class="prel" style="color:#155724">Gain +2.2–2.6</div>
+      </div>
+    </div>
+    <p style="margin-top:.85rem;color:var(--muted);font-size:.82rem;line-height:1.7">
+      ✓ Kapabilitas: Nikel Matte, Ferronickel (NPI) — 51% produksi global<br>
+      ⚠ Gap: HPAL technology — baru 3/10 fasilitas beroperasi (USGS, 2023)<br>
+      🏛 Kebijakan: Technology Transfer Agreement wajib per USD100 juta FDI<br>
+      ⏱ Estimasi 4–6 tahun | Potensi nilai tambah: <strong>×300 dari ore mentah</strong>
+    </p>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.75rem">
+      <button class="btn bor" style="font-size:.78rem;padding:.35rem .82rem" onclick="toast(&#39;Laporan Nikel sedang diunduh&#39;,&#39;s&#39;)">📄 Unduh Laporan</button>
+      <a href="https://oec.world/en/profile/country/idn#diversification-frontier" target="_blank" class="btn" style="background:var(--abg);color:var(--o);border:1px solid var(--o);font-size:.78rem;padding:.35rem .82rem">🔗 Verifikasi OEC</a>
+    </div>
+  </div>
+
+  <div class="pnl" id="p2">
+    <div class="path">
+      <div class="pnode" style="background:var(--rbg);border:2px solid var(--r)">
+        <div class="plbl" style="color:var(--muted)">POSISI SAAT INI</div>
+        <div class="pname" style="color:var(--r)">CPO / Crude Palm Oil</div>
+        <span class="ppci" style="background:var(--rbg);color:var(--r)">PCI ≈ −0.4</span>
+        <div class="prel">~60% global share ✓</div>
+      </div><div class="parr">→</div>
+      <div class="pnode" style="background:var(--abg);border:2px dashed var(--a)">
+        <div class="plbl" style="color:var(--a)">BATU LONCATAN</div>
+        <div class="pname">Olein, Stearin, Fatty Acids</div>
+        <span class="ppci" style="background:var(--abg);color:var(--a)">PCI ≈ 0.0–+0.4</span>
+        <div class="prel">Relatedness: 0.87</div>
+      </div><div class="parr">→</div>
+      <div class="pnode" style="background:#d4edda;border:2px solid #27ae60">
+        <div class="plbl" style="color:#27ae60">TARGET PRODUK</div>
+        <div class="pname" style="color:#155724">Oleokimia — Biosurfactant</div>
+        <span class="ppci" style="background:#d4edda;color:#155724">PCI ≈ +1.0–+1.4</span>
+        <div class="prel" style="color:#155724">Gain +1.4–1.8</div>
+      </div>
+    </div>
+    <p style="margin-top:.85rem;color:var(--muted);font-size:.82rem;line-height:1.7">
+      ✓ CPO terbesar dunia ⚠ Gap: Bioprocess engineering, GMP WHO certification<br>
+      🏛 Kebijakan: Mandatory Diversification Levy IDR 200/kg CPO mentah → R&amp;D Center<br>
+      ⏱ Estimasi 3–5 tahun | Target: 20% ekspor palm → oleokimia PCI ≥ 1.0 pada 2030
+    </p>
+  </div>
+
+  <div class="pnl" id="p3">
+    <div class="path">
+      <div class="pnode" style="background:var(--rbg);border:2px solid var(--r)">
+        <div class="plbl" style="color:var(--muted)">POSISI SAAT INI</div>
+        <div class="pname" style="color:var(--r)">Karet Alam Sheet / Latex</div>
+        <span class="ppci" style="background:var(--rbg);color:var(--r)">PCI ≈ 0.0–+0.2</span>
+        <div class="prel">Produsen #2 dunia ✓</div>
+      </div><div class="parr">→</div>
+      <div class="pnode" style="background:var(--abg);border:2px dashed var(--a)">
+        <div class="plbl" style="color:var(--a)">BATU LONCATAN</div>
+        <div class="pname">Karet Teknik, Gloves</div>
+        <span class="ppci" style="background:var(--abg);color:var(--a)">PCI ≈ +0.4–+0.7</span>
+        <div class="prel">Relatedness: 0.80</div>
+      </div><div class="parr">→</div>
+      <div class="pnode" style="background:#d4edda;border:2px solid #27ae60">
+        <div class="plbl" style="color:#27ae60">TARGET PRODUK</div>
+        <div class="pname" style="color:#155724">Peralatan Medis ISO 13485</div>
+        <span class="ppci" style="background:#d4edda;color:#155724">PCI ≈ +1.3–+1.8</span>
+        <div class="prel" style="color:#155724">Gain +1.3–1.6</div>
+      </div>
+    </div>
+    <p style="margin-top:.85rem;color:var(--muted);font-size:.82rem;line-height:1.7">
+      ✓ Karet alam terbesar #2 dunia ⚠ Gap: ISO 13485 — belum ada lembaga terakreditasi WHO<br>
+      🏛 Kebijakan: Medical Device Certification Hub Jawa Tengah + subsidi 100% ISO 13485 UKM<br>
+      ⏱ Estimasi 3–4 tahun | Target: 50 UKM bersertifikat ISO 13485 pada 2028
+    </p>
+  </div>
+</div>
+
+<!-- ASEAN MAP (static pre-built SVG) -->
+<div class="cw">
+  <span class="ct" style="display:block;margin-bottom:.9rem">ASEAN ECI Geo Heatmap</span>
+    <!-- Myanmar --><rect x="115" y="42" width="85" height="75" rx="7" fill="#7B241C" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Myanmar: ECI Rank #83 — Ekspor Primer&#39;,&#39;i&#39;)"><text x="157" y="72" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#fff">Myanmar</text><text x="157" y="86" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#83</text>
+    <!-- Laos --><rect x="208" y="38" width="60" height="70" rx="7" fill="#7B241C" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Laos: ECI Rank #90 — Pertanian&#39;,&#39;i&#39;)"><text x="238" y="66" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#fff">Laos</text><text x="238" y="80" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#90</text>
+    <!-- Vietnam --><rect x="278" y="30" width="72" height="140" rx="7" fill="#E8A210" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Vietnam: ECI Rank #47 — Naik pesat dari #89!&#39;,&#39;s&#39;)"><text x="314" y="92" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#333">Vietnam</text><text x="314" y="106" text-anchor="middle" font-family="Arial" font-size="9" fill="#333">#47 ↑</text>
+    <!-- Thailand --><rect x="148" y="118" width="105" height="90" rx="7" fill="#5dade2" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Thailand: ECI Rank #37 — Otomotif&#39;,&#39;i&#39;)"><text x="200" y="155" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#fff">Thailand</text><text x="200" y="169" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#37</text>
+    <!-- Kamboja --><rect x="258" y="178" width="68" height="65" rx="7" fill="#C0562A" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Kamboja: ECI Rank #72 — Tekstil&#39;,&#39;i&#39;)"><text x="292" y="206" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="#fff">Kamboja</text><text x="292" y="220" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#72</text>
+    <!-- Malaysia --><rect x="192" y="238" width="130" height="70" rx="7" fill="#27ae60" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Malaysia: ECI Rank #28 — Elektronik&#39;,&#39;s&#39;)"><text x="257" y="269" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#fff">Malaysia</text><text x="257" y="283" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#28</text>
+    <!-- Singapura --><rect x="218" y="315" width="48" height="36" rx="6" fill="#1abc9c" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Singapura: ECI Rank #21 — Hub global&#39;,&#39;s&#39;)"><text x="242" y="328" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="#fff">Sgp</text><text x="242" y="340" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#21</text>
+    <!-- Brunei --><rect x="338" y="238" width="52" height="44" rx="6" fill="#7B241C" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Brunei: ECI Rank #95 — Minyak&#39;,&#39;i&#39;)"><text x="364" y="256" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="#fff">Brunei</text><text x="364" y="270" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#95</text>
+    <!-- Filipina --><rect x="430" y="62" width="115" height="148" rx="7" fill="#C0562A" stroke="#fff" stroke-width="1.5" onclick="toast(&#39;Filipina: ECI Rank #55 — Manufaktur&#39;,&#39;i&#39;)"><text x="487" y="130" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#fff">Filipina</text><text x="487" y="144" text-anchor="middle" font-family="Arial" font-size="9" fill="#fff">#55</text>
+    <!-- INDONESIA (big, red) --><rect x="258" y="335" width="258" height="95" rx="7" fill="#A93226" stroke="#F0B429" stroke-width="3" onclick="toast(&#39;Indonesia: ECI Rank #55 — Stagnan 24 tahun!&#39;,&#39;e&#39;)"><text x="387" y="372" text-anchor="middle" font-family="Arial" font-size="14" font-weight="900" fill="#fff">Indonesia</text><text x="387" y="388" text-anchor="middle" font-family="Arial" font-size="10" fill="#F0B429">#55 — Stagnan 24 Tahun ★</text>
+    <!-- Legend -->
+  
+  <div class="src">Sumber: <a href="https://oec.world/en/visualize/geomap" target="_blank">OEC Geo Map</a> | Klik negara untuk info</div>
+</rect></rect></rect></rect></rect></rect></rect></rect></rect></rect></div>
+
+</div>
+</section>
+
+<!-- SIMULATORS -->
+<section id="sim">
+<div class="w">
+<div class="sh"><h2>⌨ Policy Simulators</h2><p>Semua fitur terbuka ▶ berbasis data OEC, no PRO required</p></div>
+
+<div class="tabs">
+  <button class="tab on" onclick="stab(this,&#39;s1&#39;)">Tax Holiday</button>
+  <button class="tab" onclick="stab(this,&#39;s2&#39;)">YIF Eligibility</button>
+  <button class="tab" onclick="stab(this,&#39;s3&#39;)">Tariff Impact</button>
+</div>
+
+<!-- TAX HOLIDAY -->
+<div class="pnl on" id="s1">
+<div class="sim">
+  <div class="simtit">PCI Tax Holiday Simulator</div>
+  <div class="simsub">Hitung tier tax holiday berdasarkan PCI produk (basis: amandemen PP 78/2019)</div>
+  <div class="r2">
+    <div class="fg">
+      <label>Produk atau Kode HS</label>
+      <input class="inp" id="pIn" placeholder="Ketik produk..." oninput="acQ(this.value,&#39;acL&#39;)" autocomplete="off">
+      <div class="acd" id="acL" style="display:none"></div>
+    </div>
+    <div class="fg"><label>Lokasi Investasi</label>
+      <select id="loc">
+        <option value="0">Jawa</option>
+        <option value="5">Luar Jawa (+5 thn)</option>
+        <option value="5">Papua/NTT (+5 thn)</option>
+      </select>
+    </div>
+  </div>
+  <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+    <button class="btn bor" onclick="runTax()">Hitung Insentif</button>
+    <button class="btn" style="background:var(--abg);color:var(--o);border:1px solid var(--o);font-size:.82rem;padding:.36rem .9rem" onclick="addCmp()">+ Bandingkan</button>
+    <button class="btn" style="background:var(--hi);color:var(--muted);border:1px solid var(--bdr);font-size:.82rem;padding:.36rem .9rem" onclick="clearCmp()">🗑 Bersihkan</button>
+  </div>
+  <div class="rb" id="taxR" style="display:none">
+    <h4 style="margin-bottom:.85rem;color:var(--r)">Hasil Simulasi</h4>
+    <div class="rr"><span class="rl">Produk</span><span class="rv" id="rP"></span></div>
+    <div class="rr"><span class="rl">Kode HS</span><span class="rv" id="rH"></span></div>
+    <div class="rr"><span class="rl">PCI Score</span><span class="rv" id="rC"></span></div>
+    <div class="rr"><span class="rl">Tax Holiday</span><span id="rT"></span></div>
+    <div class="rr"><span class="rl">Durasi</span><span class="rv" id="rD"></span></div>
+    <div class="rr"><span class="rl">Super Deduction R&amp;D</span><span class="rv" id="rRd"></span></div>
+    <div class="rr"><span class="rl">Pembebasan Bea Masuk</span><span class="rv">✓ Ya</span></div>
+    <div class="rr"><span class="rl">Basis Legal</span><span class="rv" id="rLg"></span></div>
+    <div style="display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap">
+      <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem" onclick="toast(&#39;Data tax holiday diexport sebagai CSV&#39;,&#39;s&#39;)">📊 Export CSV</button>
+      <button class="btn" style="background:var(--abg);color:var(--o);border:1px solid var(--o);font-size:.78rem;padding:.32rem .75rem" onclick="shareR()">🔗 Bagikan</button>
+    </div>
+  </div>
+  <div id="cmpP" style="display:none;margin-top:1.1rem">
+    <h4 style="margin-bottom:.65rem;color:var(--r)">Komparasi Produk</h4>
+    <div class="cmpg" id="cmpG"></div>
+    <div id="cmpBr" style="margin-top:.85rem"></div>
+  </div>
+</div>
+</div>
+
+<!-- YIF ELIGIBILITY -->
+<div class="pnl" id="s2">
+<div class="sim">
+  <div class="simtit">Youth Innovation Fund : Eligibility Checker</div>
+  <div class="simsub">Cek eligibilitas YIF (PCI ≥ 0.8 diperlukan). Semua terbuka tanpa login</div>
+  <div class="r2">
+    <div class="fg">
+      <label>Produk Startup</label>
+      <input class="inp" id="yIn" placeholder="Ketik produk startup..." oninput="acQ(this.value,&#39;yAc&#39;)" autocomplete="off">
+      <div class="acd" id="yAc" style="display:none"></div>
+    </div>
+    <div class="fg"><label>Lokasi Startup</label>
+      <select id="yLoc">
+        <option value="0">Jawa</option>
+        <option value="20">Luar Jawa (+20%)</option>
+        <option value="30">Papua/NTT/Maluku (+30%)</option>
+      </select>
+    </div>
+  </div>
+  <div class="r2">
+    <div class="fg"><label>Tahap Startup</label>
+      <select id="ySt">
+        <option value="500">Ideasi/MVP — maks Rp 500 juta</option>
+        <option value="1000">Seed — maks Rp 1 miliar</option>
+        <option value="2000">Growth (Series A+) — maks Rp 2 miliar</option>
+      </select>
+    </div>
+    <div class="fg"><label>Usia Founder</label>
+      <select id="yAge"><option>18–24 tahun</option><option>25–30 tahun</option><option>Di atas 30 tahun</option></select>
+    </div>
+  </div>
+  <button class="btn bor" onclick="runYIF()">Cek Eligibilitas</button>
+  <div class="rb" id="yifR" style="display:none">
+    <h4 style="margin-bottom:.85rem;color:var(--r)">Hasil Pengecekan YIF</h4>
+    <div class="rr"><span class="rl">Status</span><span id="yS" class="rv"></span></div>
+    <div class="rr"><span class="rl">PCI Produk</span><span class="rv" id="yC"></span></div>
+    <div class="rr"><span class="rl">Kategori Dana</span><span class="rv" id="yCa"></span></div>
+    <div class="rr"><span class="rl">Dana Dasar</span><span class="rv" id="yB"></span></div>
+    <div class="rr"><span class="rl">Bonus Geografis</span><span class="rv" id="yBo"></span></div>
+    <div class="rr"><span class="rl">Total Estimasi Dana</span><span class="rv" id="yT" style="font-size:1rem"></span></div>
+    <div style="display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap">
+      <button class="btn bor" onclick="toast(&#39;Mengarahkan ke Portal YIF...&#39;,&#39;i&#39;)">🚀 Apply Sekarang</button>
+      <button class="btn" style="background:var(--abg);color:var(--o);border:1px solid var(--o);font-size:.82rem;padding:.36rem .9rem" onclick="toast(&#39;Checklist YIF diunduh&#39;,&#39;s&#39;)">📄 Checklist</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- TARIFF -->
+<div class="pnl" id="s3">
+<div class="sim">
+  <div class="simtit">Tariff Impact Simulator</div>
+  <div class="simsub">Simulasikan dampak tarif terhadap nilai ekspor Indonesia berdasarkan elastisitas perdagangan</div>
+  <div class="r2">
+    <div class="fg"><label>Negara Pengenaan Tarif</label>
+      <select id="tC"><option value="us">Amerika Serikat</option><option value="cn">China</option><option value="eu">Uni Eropa</option><option value="jp">Jepang</option><option value="in">India</option></select>
+    </div>
+    <div class="fg"><label>Produk</label>
+      <select id="tP"><option value="nickel">Nikel &amp; Turunan</option><option value="palm">Minyak Sawit (CPO)</option><option value="coal">Batu Bara</option><option value="rubber">Karet Alam</option><option value="elec">Elektronik</option></select>
+    </div>
+  </div>
+  <div class="r2">
+    <div class="fg"><label>Tarif Baru (%)</label><input class="inp" type="number" id="tR" placeholder="Contoh: 25" min="0" max="200"></div>
+    <div class="fg"><label>Skenario Elastisitas</label>
+      <select id="tSc"><option value=".7">Dasar (−0.7)</option><option value=".4">Optimistik (−0.4)</option><option value="1.1">Pesimistik (−1.1)</option></select>
+    </div>
+  </div>
+  <button class="btn bor" onclick="runTariff()">Simulasikan Dampak</button>
+  <div class="rb" id="tarR" style="display:none">
+    <h4 style="margin-bottom:.85rem;color:var(--r)">Hasil Simulasi Tarif</h4>
+    <div class="rr"><span class="rl">Ekspor Saat Ini</span><span class="rv" id="tCu"></span></div>
+    <div class="rr"><span class="rl">Proyeksi Ekspor</span><span class="rv" id="tPr"></span></div>
+    <div class="rr"><span class="rl">Perubahan</span><span class="rv" id="tCh"></span></div>
+    <div class="rr"><span class="rl">Nilai Terdampak</span><span class="rv" id="tIm"></span></div>
+    <div class="rr"><span class="rl">Dampak ECI</span><span class="rv" id="tEC"></span></div>
+    <div class="rr"><span class="rl">Saran</span><span class="rv" id="tAd"></span></div>
+    <!-- simple visual -->
+    <div style="display:flex;gap:8px;align-items:flex-end;height:75px;margin-top:.85rem">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:3px;flex:1">
+        <div id="tbC" style="width:48px;background:var(--a);border-radius:4px 4px 0 0;transition:height .6s ease"></div>
+        <small style="font-size:.7rem;color:var(--muted)">Saat Ini</small>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:3px;flex:1">
+        <div id="tbP" style="width:48px;background:var(--r);border-radius:4px 4px 0 0;transition:height .6s ease"></div>
+        <small style="font-size:.7rem;color:var(--muted)">Proyeksi</small>
+      </div>
+    </div>
+    <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem;margin-top:.65rem" onclick="toast(&#39;Data tarif diexport CSV&#39;,&#39;s&#39;)">📊 Export CSV</button>
+  </div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- YIF TRACKER -->
+<section id="yif">
+<div class="w">
+<div class="sh"><h2>모 Youth Innovation Fund Tracker</h2><p>Pantau alokasi YIF IDR 5 Triliun ▶ dikelola Youth Advisory Board usia 18–30</p></div>
+<div class="cw">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;margin-bottom:.5rem">
+    <strong>Total Alokasi Dana</strong>
+    <small style="color:var(--muted)">Deadline: 31 Des 2026 | <strong id="dL" style="color:var(--r)">283 hari lagi</strong></small>
+  </div>
+  <div class="pw"><div class="pf" id="pf" style="width: 65%;">IDR 3,25 T / 5 T (65%)</div></div>
+  <p id="pfl" style="text-align:center;color:var(--muted);font-size:.82rem;margin-top:.3rem">Tersisa: IDR 1,75 T | Deadline: 31 Des 2026</p>
+</div>
+<div class="ystats">
+  <div class="yst"><div class="yn">247</div><div class="yl">Startup Didanai</div></div>
+  <div class="yst"><div class="yn">42%</div><div class="yl">Di Luar Jawa</div></div>
+  <div class="yst"><div class="yn">1.20</div><div class="yl">Rata-rata PCI</div></div>
+  <div class="yst"><div class="yn">312</div><div class="yl">Paten Hijau</div></div>
+</div>
+<div class="g2" style="margin-top:1.2rem">
+  <div class="cw" style="margin-bottom:0">
+    <span class="ct" style="display:block;margin-bottom:.75rem">Alokasi Sub-Dana (IDR T)</span>
+    <div id="yPie">
+    <div class="skrow"><span class="sklbl" style="width:auto;min-width:0;font-size:.78rem;flex:1">A. Green Manufacturing</span>
+    <div style="width:140px;background:var(--bdr);height:22px;border-radius:3px;overflow:hidden;margin-left:.5rem">
+      <div style="height:100%;background:#A93226;width:40%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700">IDR 2000M</div>
+    </div></div>
+    <div class="skrow"><span class="sklbl" style="width:auto;min-width:0;font-size:.78rem;flex:1">B. Deep Tech Patent</span>
+    <div style="width:140px;background:var(--bdr);height:22px;border-radius:3px;overflow:hidden;margin-left:.5rem">
+      <div style="height:100%;background:#D4880A;width:30%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700">IDR 1500M</div>
+    </div></div>
+    <div class="skrow"><span class="sklbl" style="width:auto;min-width:0;font-size:.78rem;flex:1">C. Knowledge Networks</span>
+    <div style="width:140px;background:var(--bdr);height:22px;border-radius:3px;overflow:hidden;margin-left:.5rem">
+      <div style="height:100%;background:#E8A210;width:30%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700">IDR 1500M</div>
+    </div></div></div>
+  </div>
+  <div class="cw" style="margin-bottom:0">
+    <span class="ct" style="display:block;margin-bottom:.75rem">Distribusi Geografis (Startup)</span>
+    <div class="bars" id="yGeo" style="height:150px"><div class="bcol">
+    <div class="bbar" style="height:125px;background:#A93226;min-height:3px" data-v="Jawa: 141 startup"></div>
+    <span class="blbl">Jawa</span></div><div class="bcol">
+    <div class="bbar" style="height:46px;background:#C0562A;min-height:3px" data-v="Sumatera: 52 startup"></div>
+    <span class="blbl">Sumatera</span></div><div class="bcol">
+    <div class="bbar" style="height:25px;background:#D4880A;min-height:3px" data-v="Kalimantan: 28 startup"></div>
+    <span class="blbl">Kalimantan</span></div><div class="bcol">
+    <div class="bbar" style="height:16px;background:#E8A210;min-height:3px" data-v="Sulawesi: 18 startup"></div>
+    <span class="blbl">Sulawesi</span></div><div class="bcol">
+    <div class="bbar" style="height:4px;background:#27ae60;min-height:3px" data-v="Maluku/Papua: 5 startup"></div>
+    <span class="blbl">Maluku/Papua</span></div><div class="bcol">
+    <div class="bbar" style="height:3px;background:#3498db;min-height:3px" data-v="Nusa Tenggara: 3 startup"></div>
+    <span class="blbl">Nusa Tenggara</span></div></div>
+  </div>
+</div>
+<div style="text-align:center;margin-top:1.4rem">
+  <button class="btn bor" style="font-size:.93rem;padding:.6rem 2rem" onclick="toast(&#39;Mengarahkan ke Portal YIF (segera aktif)&#39;,&#39;i&#39;)">🚀 Apply Youth Innovation Fund</button>
+  <p style="margin-top:.45rem;color:var(--muted);font-size:.8rem">Syarat: PCI ≥ 0.8 | Usia ≤ 30 tahun | NPWP aktif</p>
+</div>
+</div>
+</section>
+
+<!-- COI -->
+<section id="coi">
+<div class="w">
+<div class="sh"><h2>⚖ Complexity Observatory Indonesia</h2><p>Target Product Basket, PSNI, dan pembaruan kebijakan terkini</p></div>
+<div class="coig">
+  <div class="coic">
+    <h3>Target Product Basket 2025–2027</h3>
+    <p style="font-size:.76rem;color:var(--muted);margin-bottom:.65rem">Diperbarui Maret 2026 | Relatedness ≥ 0.3, PCI gain ≥ 0.8</p>
+    <div id="tpbL"><div class="tpi" onclick="toast(&#39;Battery Cathode Precursor (NCMA): PCI 1.7 | Nikel&#39;,&#39;i&#39;)">
+      <div><strong style="font-size:.85rem">Battery Cathode Precursor (NCMA)</strong><br><small style="color:var(--muted)">Nikel | PCI 1.7</small></div>
+      <span class="tbg ton">Aktif</span>
+    </div><div class="tpi" onclick="toast(&#39;Medical Device ISO 13485: PCI 1.8 | Karet&#39;,&#39;i&#39;)">
+      <div><strong style="font-size:.85rem">Medical Device ISO 13485</strong><br><small style="color:var(--muted)">Karet | PCI 1.8</small></div>
+      <span class="tbg tpr">Proses</span>
+    </div><div class="tpi" onclick="toast(&#39;Oleokimia Biosurfactant: PCI 1.1 | Sawit&#39;,&#39;i&#39;)">
+      <div><strong style="font-size:.85rem">Oleokimia Biosurfactant</strong><br><small style="color:var(--muted)">Sawit | PCI 1.1</small></div>
+      <span class="tbg ton">Aktif</span>
+    </div><div class="tpi" onclick="toast(&#39;Smart IoT Manufacturing Device: PCI 1.4 | Elektronik&#39;,&#39;i&#39;)">
+      <div><strong style="font-size:.85rem">Smart IoT Manufacturing Device</strong><br><small style="color:var(--muted)">Elektronik | PCI 1.4</small></div>
+      <span class="tbg tpr">Proses</span>
+    </div><div class="tpi" onclick="toast(&#39;Precision Alloy Ni-based: PCI 1.4 | Nikel&#39;,&#39;i&#39;)">
+      <div><strong style="font-size:.85rem">Precision Alloy Ni-based</strong><br><small style="color:var(--muted)">Nikel | PCI 1.4</small></div>
+      <span class="tbg tpl">Direncanakan</span>
+    </div><div class="tpi" onclick="toast(&#39;EV Motor Components: PCI 1.6 | Elektromotif&#39;,&#39;i&#39;)">
+      <div><strong style="font-size:.85rem">EV Motor Components</strong><br><small style="color:var(--muted)">Elektromotif | PCI 1.6</small></div>
+      <span class="tbg tpr">Proses</span>
+    </div><div class="tpi" onclick="toast(&#39;Pharma Excipients Palm-based: PCI 1.3 | Sawit&#39;,&#39;i&#39;)">
+      <div><strong style="font-size:.85rem">Pharma Excipients Palm-based</strong><br><small style="color:var(--muted)">Sawit | PCI 1.3</small></div>
+      <span class="tbg tpl">Direncanakan</span>
+    </div></div>
+    <a href="https://oec.world/en/profile/country/idn#diversification-frontier" target="_blank" style="font-size:.76rem;display:block;margin-top:.55rem">🔗 Verifikasi di OEC</a>
+  </div>
+  <div class="coic">
+    <h3>ECI Indonesia — Aktual vs Target</h3>
+    <div class="bars" id="coiB" style="height:150px"><div class="bcol">
+    <div class="bbar" style="height:19px;background:#A93226;border:;min-height:5px" data-v="2000: #55"></div>
+    <span class="blbl">2000</span></div><div class="bcol">
+    <div class="bbar" style="height:17px;background:#A93226;border:;min-height:5px" data-v="2010: #56"></div>
+    <span class="blbl">2010</span></div><div class="bcol">
+    <div class="bbar" style="height:19px;background:#A93226;border:;min-height:5px" data-v="2020: #55"></div>
+    <span class="blbl">2020</span></div><div class="bcol">
+    <div class="bbar" style="height:19px;background:#A93226;border:;min-height:5px" data-v="2024: #55"></div>
+    <span class="blbl">2024</span></div><div class="bcol">
+    <div class="bbar" style="height:26px;background:rgba(39,174,96,.55);border:2px dashed #27ae60;min-height:5px" data-v="2027: #52 (target)"></div>
+    <span class="blbl">2027</span></div><div class="bcol">
+    <div class="bbar" style="height:39px;background:rgba(39,174,96,.55);border:2px dashed #27ae60;min-height:5px" data-v="2030: #46 (target)"></div>
+    <span class="blbl">2030</span></div><div class="bcol">
+    <div class="bbar" style="height:53px;background:rgba(39,174,96,.55);border:2px dashed #27ae60;min-height:5px" data-v="2035: #40 (target)"></div>
+    <span class="blbl">2035</span></div></div>
+    <div style="display:flex;gap:.8rem;margin-top:.5rem;font-size:.72rem">
+      <span style="display:flex;align-items:center;gap:.25rem"><span style="width:9px;height:9px;background:var(--r);border-radius:2px"></span>Aktual</span>
+      <span style="display:flex;align-items:center;gap:.25rem"><span style="width:9px;height:9px;background:#27ae60;border:2px dashed #27ae60;border-radius:2px"></span>Target</span>
+    </div>
+    <div class="src">Sumber: <a href="https://oec.world/en/rankings/eci/hs6/hs96" target="_blank">OEC ECI Rankings</a></div>
+  </div>
+  <div class="coic">
+    <h3>Product Space Navigation Index (PSNI)</h3>
+    <div class="psni-wrap">
+      <div class="psni-ring">
+        <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--bdr)" stroke-width="3.2"></circle>
+          <circle cx="18" cy="18" r="15.9" fill="none" stroke="url(#pg)" stroke-width="3.2" stroke-dasharray="34 66" stroke-linecap="round"></circle>
+          <defs><lineargradient id="pg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#A93226"></stop><stop offset="100%" stop-color="#E8A210"></stop></lineargradient></defs>
+        </svg>
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center">
+          <div style="font-size:1.5rem;font-weight:800;color:var(--o)">0.34</div>
+          <div style="font-size:.66rem;color:var(--muted)">Saat Ini</div>
+        </div>
+      </div>
+      <div>
+        <div style="margin-bottom:.65rem"><div style="font-size:1.15rem;font-weight:800;color:var(--a)">0.60</div><div style="font-size:.72rem;color:var(--muted)">Target 2030</div></div>
+        <div><div style="font-size:1.15rem;font-weight:800;color:#27ae60">+0.03</div><div style="font-size:.72rem;color:var(--muted)">vs Q4 2025</div></div>
+      </div>
+    </div>
+    <p style="font-size:.79rem;color:var(--muted);margin-top:.55rem;line-height:1.6">PSNI mengukur kedekatan ekspor Indonesia ke produk-produk target. Skala 0–1, diperbarui kuartalan oleh COI berbasis data OEC.</p>
+  </div>
+  <div class="coic">
+    <h3>Pembaruan Kebijakan COI</h3>
+    <div id="coiN"><div class="ni"><span class="nd">Mar 2026</span>PSNI Q1 2026: Indonesia 0.34 (+0.03 vs Q4 2025) — tren positif.</div><div class="ni"><span class="nd">Feb 2026</span>Target Product Basket 2026 diperbarui: 3 produk baru (EV Motor, Pharma, Precision Alloy).</div><div class="ni"><span class="nd">Jan 2026</span>Kemitraan COI–OEC resmi: update data bulanan untuk Indonesia.</div><div class="ni"><span class="nd">Des 2025</span>Rapat COI–BKPM: PCI Tax Holiday masuk konsultasi revisi PP 78/2019.</div></div>
+    <button class="btn bor" style="margin-top:.75rem;width:100%;font-size:.82rem;padding:.4rem" onclick="toast(&#39;Notifikasi COI berhasil diaktifkan!&#39;,&#39;s&#39;)">🔔 Berlangganan Notifikasi</button>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- LEARN -->
+<section id="learn">
+<div class="w">
+<div class="sh"><h2>🗐 OEC Literacy Modules</h2><p>4 modul gratis terbuka ▶ kuis interaktif + sertifikat, tanpa PRO</p></div>
+<div class="mods" id="mG"><div class="modc">
+      <div style="font-size:1.7rem;margin-bottom:.38rem"></div>
+      <h3>ECI Fundamentals</h3>
+      <div class="mmeta"><span>⏱ 20 jam</span><span class="lb lbb">Beginner</span><span class="lb lbf">Gratis</span></div>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:.6rem">Pahami ECI, PCI, dan mengapa kompleksitas penting untuk pertumbuhan Indonesia.</p>
+      <div class="mpb"><div class="mpbf" style="width:0%"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:.74rem;color:var(--muted);margin-bottom:.65rem">
+        <span>Progress 0%</span><span>Lanjutkan</span>
+      </div>
+      <div style="display:flex;gap:.45rem;flex-wrap:wrap">
+        <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem" onclick="startQ(1)">▶ Quiz</button>
+        
+      </div>
+    </div><div class="modc">
+      <div style="font-size:1.7rem;margin-bottom:.38rem"></div>
+      <h3>Product Space 101</h3>
+      <div class="mmeta"><span>⏱ 30 jam</span><span class="lb lbb">Beginner</span><span class="lb lbf">Gratis</span></div>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:.6rem">Navigasi Product Space, relatedness, dan cara menemukan stepping stone.</p>
+      <div class="mpb"><div class="mpbf" style="width:0%"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:.74rem;color:var(--muted);margin-bottom:.65rem">
+        <span>Progress 0%</span><span>Lanjutkan</span>
+      </div>
+      <div style="display:flex;gap:.45rem;flex-wrap:wrap">
+        <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem" onclick="startQ(2)">▶ Quiz</button>
+        
+      </div>
+    </div><div class="modc">
+      <div style="font-size:1.7rem;margin-bottom:.38rem"></div>
+      <h3>Trade Data Analysis</h3>
+      <div class="mmeta"><span>⏱ 40 jam</span><span class="lb lbi">Intermediate</span><span class="lb lbf">Gratis</span></div>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:.6rem">Analisis data perdagangan OEC, bilateral explorer, dan tren ekspor-impor.</p>
+      <div class="mpb"><div class="mpbf" style="width:0%"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:.74rem;color:var(--muted);margin-bottom:.65rem">
+        <span>Progress 0%</span><span>Lanjutkan</span>
+      </div>
+      <div style="display:flex;gap:.45rem;flex-wrap:wrap">
+        <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem" onclick="startQ(3)">▶ Quiz</button>
+        
+      </div>
+    </div><div class="modc">
+      <div style="font-size:1.7rem;margin-bottom:.38rem"></div>
+      <h3>Python &amp; OEC API</h3>
+      <div class="mmeta"><span>⏱ 60 jam</span><span class="lb lba">Advanced</span><span class="lb lbf">Gratis</span></div>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:.6rem">Programatik dengan OEC API, replikasi ECI, dan visualisasi Python.</p>
+      <div class="mpb"><div class="mpbf" style="width:0%"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:.74rem;color:var(--muted);margin-bottom:.65rem">
+        <span>Progress 0%</span><span>Lanjutkan</span>
+      </div>
+      <div style="display:flex;gap:.45rem;flex-wrap:wrap">
+        <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem" onclick="startQ(4)">▶ Quiz</button>
+        
+      </div>
+    </div></div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="w">
+<div class="fg2">
+  <div><h3>🌿 GreenLeap ID</h3><p style="font-size:.82rem;line-height:1.7">Platform data OEC untuk lompatan ECI Indonesia to #40 pada 2035.</p></div>
+  <div><h3>Platform</h3><ul>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#dash">ECI Dashboard</a></li><li><a href="https://4121220225ricky-create.github.io/greenleap/#ps">Product Space</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#sim">Policy Simulators</a></li><li><a href="https://4121220225ricky-create.github.io/greenleap/#yif">YIF Tracker</a></li>
+    <li><a href="https://4121220225ricky-create.github.io/greenleap/#coi">COI Dashboard</a></li><li><a href="https://4121220225ricky-create.github.io/greenleap/#learn">OEC Literacy</a></li>
+  </ul></div>
+  <div><h3>Sumber Data</h3><ul>
+    <li><a href="https://oec.world/" target="_blank">Observatory of Economic Complexity</a></li>
+    <li><a href="https://oec.world/en/resources/methods" target="_blank">Metodologi OEC</a></li>
+    <li><a href="https://oec.world/en/resources/notebooks" target="_blank">OEC Python Notebooks</a></li>
+    <li><a href="https://oec.world/en/resources/about" target="_blank">Lisensi CC0 Public Domain</a></li>
+  </ul></div>
+  <div>
+    <h3>Penulis &amp; Kontak</h3>
+    <ul>
+      <li><strong>Ricky Dina Rajendra</strong></li>
+      <li>Politeknik Keuangan Negara STAN</li>
+      <li>Tangerang Selatan, Indonesia</li>
+      <li><a href="https://www.pknstan.ac.id/" target="_blank">🏛 pknstan.ac.id</a></li>
+    </ul>
+  </div>
+  <div><h3>Referensi</h3><ul>
+    <li><a href="https://doi.org/10.1073/pnas.0900943106" target="_blank">Hidalgo &amp; Hausmann (2009)</a></li>
+    <li><a href="https://doi.org/10.1126/science.1144581" target="_blank">Hidalgo et al. (2007)</a></li>
+    <li><a href="https://doi.org/10.1016/j.worlddev.2016.12.020" target="_blank">Hartmann et al. (2017)</a></li>
+  </ul></div>
+</div>
+<div class="fbot">© 2026 <strong>Ricky Dina Rajendra</strong> — Politeknik Keuangan Negara STAN  |  GreenLeap ID  |  Data: OEC (oec.world)  |  Lisensi CC0  |  Simoes &amp; Hidalgo (2011)</div>
+  <div style="text-align:center;margin-top:.6rem;font-size:.78rem;opacity:.55;padding:.4rem 0;border-top:1px solid rgba(255,255,255,.06)">
+    ✍️ Dikembangkan oleh <strong>Ricky Dina Rajendra</strong> PKN STAN &nbsp;|&nbsp; 🌿 GreenLeap ID &nbsp;· 2026
+  </div>
+</div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal" id="mlog">
+<div class="mb"><div class="mhd"><h2>Masuk ke GreenLeap ID</h2><button class="xb" onclick="closeM(&#39;mlog&#39;)">×</button></div>
+  <div class="fg"><label>Email</label><input class="inp" type="email" placeholder="nama@email.com"></div>
+  <div class="fg"><label>Password</label><input class="inp" type="password" placeholder="••••••••"></div>
+  <button class="btn bor" style="width:100%" onclick="closeM(&#39;mlog&#39;);toast(&#39;Berhasil masuk!&#39;,&#39;s&#39;)">Masuk</button>
+  <p style="text-align:center;margin-top:.75rem;font-size:.84rem;color:var(--muted)">Belum punya akun? <a href="https://4121220225ricky-create.github.io/greenleap/#" onclick="closeM(&#39;mlog&#39;);openM(&#39;mreg&#39;)">Daftar Gratis</a></p>
+</div></div>
+
+<div class="modal" id="mreg">
+<div class="mb"><div class="mhd"><h2>Daftar GreenLeap ID</h2><button class="xb" onclick="closeM(&#39;mreg&#39;)">×</button></div>
+  <div class="fg"><label>Nama Lengkap</label><input class="inp" placeholder="Nama Anda"></div>
+  <div class="fg"><label>Email</label><input class="inp" type="email" placeholder="nama@email.com"></div>
+  <div class="fg"><label>Kategori</label><select class="inp"><option>Policy Analyst / ASN</option><option>Mahasiswa / Peneliti</option><option>Investor / Fund Manager</option><option>Founder Startup</option></select></div>
+  <div class="fg"><label>Password</label><input class="inp" type="password" placeholder="Min. 8 karakter"></div>
+  <button class="btn bor" style="width:100%" onclick="closeM(&#39;mreg&#39;);toast(&#39;Akun dibuat! Semua fitur terbuka.&#39;,&#39;s&#39;)">Daftar Gratis — Semua Fitur Terbuka</button>
+</div></div>
+
+<div class="modal" id="mQ">
+<div class="mb" style="max-width:500px">
+  <div class="mhd"><h2 id="qTit">Quiz</h2><button class="xb" onclick="closeM(&#39;mQ&#39;)">×</button></div>
+  <div class="qprog"><div class="qprogf" id="qPB" style="width:20%"></div></div>
+  <div style="display:flex;justify-content:space-between;font-size:.76rem;color:var(--muted);margin-bottom:.75rem">
+    <span id="qPrg">1/5</span><span id="qSc">Skor: 0</span>
+  </div>
+  <div id="qCt"></div>
+  <div style="display:flex;justify-content:flex-end;gap:.5rem;margin-top:.9rem">
+    <button class="btn" style="background:var(--hi);color:var(--muted);border:1px solid var(--bdr);font-size:.82rem;padding:.36rem .9rem" onclick="closeM(&#39;mQ&#39;)">Tutup</button>
+    <button class="btn bor" id="qNxt" style="display:none;font-size:.82rem;padding:.36rem .9rem" onclick="nextQ()">Berikutnya →</button>
+  </div>
+</div></div>
+
+<script>
+// ─── ALL DATA ─────────────────────────────────────────────────
+const ECI_D={
+  'Indonesia':   {r:[55,56,55,55],c:'#A93226',asean:true},
+  'Vietnam':     {r:[89,67,50,47],c:'#E8A210',asean:true},
+  'Malaysia':    {r:[48,40,31,28],c:'#3498db',asean:true},
+  'Thailand':    {r:[53,46,39,37],c:'#27ae60',asean:true},
+  'Singapura':   {r:[25,20,19,21],c:'#1abc9c',asean:true},
+  'Korea Selatan':{r:[12,8,5,4],c:'#9b59b6',asean:false},
+  'Jepang':      {r:[1,1,1,1],c:'#C0562A',asean:false},
+  'Jerman':      {r:[4,3,3,3],c:'#7B241C',asean:false},
+};
+const TM_D={
+  '2024':[[32,'Komoditas Mentah','PCI<0','#A93226'],[27,'Manufaktur Dasar','PCI 0–0.5','#C0562A'],[20,'Menengah','PCI 0.5–1','#D4880A'],[21,'Kompleks','PCI>1','#E8A210']],
+  '2020':[[38,'Komoditas Mentah','PCI<0','#A93226'],[28,'Manufaktur Dasar','PCI 0–0.5','#C0562A'],[18,'Menengah','PCI 0.5–1','#D4880A'],[16,'Kompleks','PCI>1','#E8A210']],
+  '2015':[[41,'Komoditas Mentah','PCI<0','#A93226'],[29,'Manufaktur Dasar','PCI 0–0.5','#C0562A'],[16,'Menengah','PCI 0.5–1','#D4880A'],[14,'Kompleks','PCI>1','#E8A210']],
+  '2010':[[45,'Komoditas Mentah','PCI<0','#A93226'],[30,'Manufaktur Dasar','PCI 0–0.5','#C0562A'],[14,'Menengah','PCI 0.5–1','#D4880A'],[11,'Kompleks','PCI>1','#E8A210']],
+  '2000':[[42,'Komoditas Mentah','PCI<0','#A93226'],[32,'Manufaktur Dasar','PCI 0–0.5','#C0562A'],[16,'Menengah','PCI 0.5–1','#D4880A'],[10,'Kompleks','PCI>1','#E8A210']],
+};
+const STK_D={
+  idn:{'2000':[42,32,16,8,2],'2010':[45,30,14,9,2],'2020':[38,28,18,13,3],'2024':[32,27,20,17,4]},
+  vnm:{'2000':[32,38,18,10,2],'2010':[18,25,22,26,9],'2020':[10,15,18,38,19],'2024':[7,12,16,41,24]},
+};
+const SK=['#A93226','#C0562A','#D4880A','#E8A210','#27ae60'];
+const GDP=[
+  {n:'Jepang',x:1,y:1.2,c:'#C0562A'},{n:'Jerman',x:3,y:1.8,c:'#7B241C'},
+  {n:'Korea Sel.',x:8,y:4.5,c:'#9b59b6'},{n:'Singapura',x:21,y:4.2,c:'#1abc9c'},
+  {n:'Malaysia',x:28,y:4.8,c:'#3498db'},{n:'China',x:30,y:7.5,c:'#e74c3c'},
+  {n:'Thailand',x:37,y:3.5,c:'#27ae60'},{n:'Vietnam',x:47,y:6.5,c:'#E8A210'},
+  {n:'India',x:47,y:6.0,c:'#f39c12'},{n:'Filipina',x:55,y:5.5,c:'#16a085'},
+  {n:'Indonesia',x:55,y:5.1,c:'#A93226',idn:true},
+];
+const PRODS=[
+  {n:'Baterai Lithium-ion',hs:'850760',pci:1.2,s:'nickel',t:'target'},
+  {n:'Nikel Sulfat',hs:'283324',pci:0.7,s:'nickel',t:'stepping'},
+  {n:'Battery Cathode Precursor',hs:'285369',pci:1.7,s:'nickel',t:'target'},
+  {n:'Precision Alloy Ni-based',hs:'720299',pci:1.4,s:'nickel',t:'target'},
+  {n:'Mixed Hydroxide Precipitate',hs:'283210',pci:0.6,s:'nickel',t:'stepping'},
+  {n:'Katalis Industri',hs:'381512',pci:1.5,s:'chem',t:'target'},
+  {n:'Oleokimia Biosurfactant',hs:'291570',pci:1.1,s:'palm',t:'target'},
+  {n:'Biodiesel',hs:'382600',pci:0.8,s:'palm',t:'stepping'},
+  {n:'Olein Sawit',hs:'151190',pci:0.3,s:'palm',t:'stepping'},
+  {n:'Pharma Excipients',hs:'290319',pci:1.3,s:'palm',t:'target'},
+  {n:'Kosmetik Natural',hs:'330499',pci:1.3,s:'palm',t:'target'},
+  {n:'Ban Kendaraan Listrik',hs:'401110',pci:1.0,s:'rubber',t:'stepping'},
+  {n:'Karet Teknik',hs:'400994',pci:1.2,s:'rubber',t:'target'},
+  {n:'Lateks Medis ISO 13485',hs:'392690',pci:1.4,s:'rubber',t:'target'},
+  {n:'Medical Catheter',hs:'901890',pci:1.8,s:'rubber',t:'target'},
+  {n:'Smart IoT Device',hs:'852872',pci:1.4,s:'elec',t:'target'},
+  {n:'Solar Panel',hs:'854140',pci:1.5,s:'elec',t:'target'},
+  {n:'EV Motor Components',hs:'850110',pci:1.6,s:'elec',t:'target'},
+];
+const TRF={nickel:{us:3200,cn:8500,eu:1200,jp:900,in:400},palm:{us:800,cn:2100,eu:3500,jp:1100,in:2800},coal:{us:1200,cn:12000,eu:2400,jp:6800,in:4200},rubber:{us:600,cn:1500,eu:900,jp:800,in:600},elec:{us:4500,cn:3200,eu:2100,jp:1800,in:900}};
+const TPB=[
+  {n:'Battery Cathode Precursor (NCMA)',s:'Nikel',pci:1.7,st:'on'},
+  {n:'Medical Device ISO 13485',s:'Karet',pci:1.8,st:'prog'},
+  {n:'Oleokimia Biosurfactant',s:'Sawit',pci:1.1,st:'on'},
+  {n:'Smart IoT Manufacturing Device',s:'Elektronik',pci:1.4,st:'prog'},
+  {n:'Precision Alloy Ni-based',s:'Nikel',pci:1.4,st:'plan'},
+  {n:'EV Motor Components',s:'Elektromotif',pci:1.6,st:'prog'},
+  {n:'Pharma Excipients Palm-based',s:'Sawit',pci:1.3,st:'plan'},
+];
+const NEWS=[
+  {d:'Mar 2026',t:'PSNI Q1 2026: Indonesia 0.34 (+0.03 vs Q4 2025) — tren positif.'},
+  {d:'Feb 2026',t:'Target Product Basket 2026 diperbarui: 3 produk baru (EV Motor, Pharma, Precision Alloy).'},
+  {d:'Jan 2026',t:'Kemitraan COI–OEC resmi: update data bulanan untuk Indonesia.'},
+  {d:'Des 2025',t:'Rapat COI–BKPM: PCI Tax Holiday masuk konsultasi revisi PP 78/2019.'},
+];
+const MODS=[
+  {id:1,ic:'',t:'ECI Fundamentals',dur:'20 jam',lv:'Beginner',desc:'Pahami ECI, PCI, dan mengapa kompleksitas penting untuk pertumbuhan Indonesia.'},
+  {id:2,ic:'',t:'Product Space 101',dur:'30 jam',lv:'Beginner',desc:'Navigasi Product Space, relatedness, dan cara menemukan stepping stone.'},
+  {id:3,ic:'',t:'Trade Data Analysis',dur:'40 jam',lv:'Intermediate',desc:'Analisis data perdagangan OEC, bilateral explorer, dan tren ekspor-impor.'},
+  {id:4,ic:'',t:'Python & OEC API',dur:'60 jam',lv:'Advanced',desc:'Programatik dengan OEC API, replikasi ECI, dan visualisasi Python.'},
+];
+const QZ={
+  1:[{q:'ECI singkatan dari?',o:['Economic Competitiveness Index','Economic Complexity Index','Export Complexity Indicator','Economic Convergence Index'],a:1,e:'ECI = Economic Complexity Index (Hidalgo & Hausmann, 2009).'},
+     {q:'Sumber data backbone GreenLeap ID?',o:['IMF Data','World Bank WDI','Observatory of Economic Complexity (OEC)','ASEAN Stats'],a:2,e:'OEC (oec.world) — platform MIT, lisensi CC0 public domain.'},
+     {q:'Vietnam ECI naik dari #89 ke #47 dalam berapa tahun?',o:['10 tahun','20 tahun','24 tahun','5 tahun'],a:2,e:'Vietnam naik dari #89 (2000) ke #47 (2024) dalam 24 tahun.'},
+     {q:'Hubungan ECI dan GDP per Hidalgo & Hausmann (2009)?',o:['Tidak ada hubungan','ECI tinggi = tumbuh lebih lambat','ECI tinggi berkorelasi pertumbuhan lebih cepat','Hanya berlaku negara maju'],a:2,e:'+1 SD ECI berkorelasi dengan tambahan 4–7% pertumbuhan GDP tahunan.'},
+     {q:'Indonesia saat ini di Product Space berada di?',o:['Inti (produk kompleks)','Pinggiran (komoditas PCI rendah)','Tengah (menengah)','Tidak terpetakan'],a:1,e:'Ekspor utama IDN (batubara, CPO, nikel ore) berada di pinggiran — PCI negatif.'},
+  ],
+  2:[{q:'Product Space dipublikasikan pertama di?',o:['Nature (2010)','Science 317 (2007)','PNAS (2009)','The Economist (2011)'],a:1,e:'Hidalgo, Klinger, Barabási & Hausmann, Science 317 (2007).'},
+     {q:'"Relatedness" dalam Product Space berarti?',o:['Kesamaan nilai ekspor','Probabilitas ko-ekspor — proxy kesamaan kapabilitas','Nilai tarif antar produk','Jarak geografis pasar'],a:1,e:'Relatedness = probabilitas dua produk diekspor bersama secara global.'},
+     {q:'Stepping stone nikel menuju battery-grade?',o:['CPO','Nikel Sulfat / MHP','Karet Alam','Tekstil'],a:1,e:'Nikel Sulfat dan MHP adalah stepping stone ke battery cathode precursor.'},
+     {q:'OEC Diversification Frontier menunjukkan?',o:['Prediksi harga komoditas','Produk target relatedness tinggi & PCI gain besar','Nilai tukar mata uang','Peringkat daya saing'],a:1,e:'Diversification Frontier: produk yang "terjangkau" dari kapabilitas saat ini.'},
+     {q:'Nilai tambah nikel ore ke cathode precursor?',o:['×10','×50','×100','×300'],a:3,e:'Nikel ore ~$60/ton vs cathode ~$18.000/ton = ×300 (USITC, 2024).'},
+  ],
+  3:[{q:'Lisensi data OEC international?',o:['Berbayar semua','CC0 Public Domain (gratis)','Hanya akademisi','Hanya pemerintah'],a:1,e:'Data OEC berlisensi CC0 — public domain, bebas digunakan.'},
+     {q:'ECI secara teknis adalah?',o:['Rata-rata GDP tertimbang','Eigenvector matriks negara-produk (RCA≥1)','Indeks Herfindahl ekspor','Z-score PDB per kapita'],a:1,e:'ECI = eigenvector kedua dari matriks Mcc\', dinormalisasi Z-transform.'},
+     {q:'Periode data historis OEC free tier?',o:['5 tahun terakhir','1995–2024 (~30 tahun)','2010–2024','Tahun terbaru saja'],a:1,e:'OEC menyediakan data dari 1995 hingga 2024 di free tier.'},
+     {q:'RCA ≥ 1 berarti?',o:['Revenue Customs Analysis','Revealed Comparative Advantage — ekspor lebih dari rata-rata global','Regional Competitive Assessment','Real Complexity Adjustment'],a:1,e:'RCA ≥ 1 = Indonesia punya keunggulan komparatif pada produk tersebut.'},
+     {q:'Tariff Simulator OEC ada di?',o:['oec.world/en/explorer','oec.world/en/tariff-simulator-report','oec.world/en/rankings','oec.world/en/games'],a:1,e:'oec.world/en/tariff-simulator-report (free tier, 2025).'},
+  ],
+  4:[{q:'OEC Python Notebooks ada di?',o:['github.com/oec','oec.world/en/resources/notebooks','pypi.org/oec','kaggle.com/oec'],a:1,e:'oec.world/en/resources/notebooks — gratis.'},
+     {q:'Library Python terbaik untuk ECI?',o:['TensorFlow','Pandas + NetworkX + Scipy','BeautifulSoup','PyTorch'],a:1,e:'Pandas (data), NetworkX (graph), Scipy (eigenvalue) untuk kalkulasi ECI.'},
+     {q:'Sitasi resmi OEC adalah?',o:['OECD (2020)','Simoes & Hidalgo (2011). Economic Complexity Observatory. AAAI.','Harvard Growth Lab (2014)','World Bank (2023)'],a:1,e:'Simoes & Hidalgo (2011). Tersedia di oec.world/en/resources/about.'},
+     {q:'Full API OEC memerlukan?',o:['Tidak perlu akun','PRO tier ($299/bulan)','Akun gratis sudah semua','Lisensi khusus pemerintah'],a:1,e:'Full API memerlukan PRO tier. Python Notebooks gratis untuk kalkulasi dasar.'},
+     {q:'PSNI singkatan dari?',o:['Product Space National Index','Product Space Navigation Index','Production Sector Node Index','Policy Simulation Interface'],a:1,e:'PSNI = Product Space Navigation Index — ukuran kedekatan ekspor ke produk target (COI, 2026).'},
+  ],
+};
+
+// Product Space node data (pre-computed, static)
+const PS=[
+  // Core (target) — center cluster
+  {n:'Battery Cathode',c:'#27ae60',pci:1.7,s:'nickel',t:'target',x:.5,y:.47},
+  {n:'EV Motor',c:'#27ae60',pci:1.6,s:'elec',t:'target',x:.55,y:.52},
+  {n:'Katalis',c:'#27ae60',pci:1.5,s:'chem',t:'target',x:.5,y:.55},
+  {n:'Solar Panel',c:'#27ae60',pci:1.5,s:'elec',t:'target',x:.44,y:.53},
+  {n:'Kateter Medis',c:'#27ae60',pci:1.8,s:'rubber',t:'target',x:.47,y:.43},
+  {n:'IoT Device',c:'#27ae60',pci:1.4,s:'elec',t:'target',x:.53,y:.42},
+  {n:'Precision Alloy',c:'#27ae60',pci:1.4,s:'nickel',t:'target',x:.41,y:.47},
+  {n:'Oleokimia',c:'#27ae60',pci:1.1,s:'palm',t:'target',x:.59,y:.42},
+  {n:'Pharma Excip.',c:'#27ae60',pci:1.3,s:'palm',t:'target',x:.63,y:.48},
+  {n:'Lateks Medis',c:'#27ae60',pci:1.4,s:'rubber',t:'target',x:.35,y:.58},
+  {n:'Karet Teknik',c:'#27ae60',pci:1.2,s:'rubber',t:'target',x:.38,y:.63},
+  {n:'Kosmetik',c:'#27ae60',pci:1.3,s:'palm',t:'target',x:.65,y:.56},
+  // High complexity other
+  {n:'Semikonduktor',c:'#3498db',pci:2.1,s:'other',t:'other',x:.5,y:.4},
+  {n:'Farmasi',c:'#3498db',pci:1.8,s:'other',t:'other',x:.54,y:.37},
+  {n:'Optik Presisi',c:'#3498db',pci:1.9,s:'other',t:'other',x:.44,y:.38},
+  {n:'Mesin Presisi',c:'#3498db',pci:1.9,s:'other',t:'other',x:.47,y:.35},
+  // Stepping stone — middle ring
+  {n:'Nikel Sulfat',c:'#E8A210',pci:.7,s:'nickel',t:'stepping',x:.32,y:.41},
+  {n:'MHP',c:'#E8A210',pci:.6,s:'nickel',t:'stepping',x:.29,y:.35},
+  {n:'Stainless Steel',c:'#E8A210',pci:.9,s:'nickel',t:'stepping',x:.34,y:.33},
+  {n:'Biodiesel',c:'#E8A210',pci:.8,s:'palm',t:'stepping',x:.65,y:.36},
+  {n:'Olein Sawit',c:'#E8A210',pci:.3,s:'palm',t:'stepping',x:.68,y:.64},
+  {n:'Ban EV',c:'#E8A210',pci:1.0,s:'rubber',t:'stepping',x:.34,y:.70},
+  {n:'Karet Gloves',c:'#E8A210',pci:.7,s:'rubber',t:'stepping',x:.3,y:.63},
+  // IDN exports — outer
+  {n:'Nikel Ore ★',c:'#A93226',pci:-.8,s:'nickel',t:'idn',x:.19,y:.25,big:1},
+  {n:'Batu Bara ★',c:'#A93226',pci:-.8,s:'energy',t:'idn',x:.13,y:.38,big:1},
+  {n:'CPO ★',c:'#A93226',pci:-.3,s:'palm',t:'idn',x:.81,y:.28,big:1},
+  {n:'Ferronickel ★',c:'#A93226',pci:-.2,s:'nickel',t:'idn',x:.22,y:.34,big:1},
+  {n:'Karet Alam ★',c:'#A93226',pci:.1,s:'rubber',t:'idn',x:.2,y:.68},
+  {n:'Bauksit ★',c:'#A93226',pci:-.6,s:'other',t:'idn',x:.15,y:.52},
+  {n:'Tekstil Dasar ★',c:'#A93226',pci:.2,s:'other',t:'idn',x:.27,y:.8},
+  {n:'Kayu Olahan ★',c:'#A93226',pci:.0,s:'other',t:'idn',x:.73,y:.8},
+  // Commodities — outer periphery
+  {n:'Gas Alam',c:'#9A8060',pci:-.5,s:'other',t:'other',x:.1,y:.28},
+  {n:'Kakao',c:'#9A8060',pci:-.2,s:'other',t:'other',x:.87,y:.42},
+  {n:'Kopi',c:'#9A8060',pci:-.3,s:'other',t:'other',x:.86,y:.54},
+  {n:'Timah Ore',c:'#9A8060',pci:-.4,s:'other',t:'other',x:.13,y:.62},
+  {n:'Rempah',c:'#9A8060',pci:-.1,s:'other',t:'other',x:.84,y:.64},
+  {n:'Kayu Log',c:'#9A8060',pci:-.6,s:'other',t:'other',x:.16,y:.75},
+  {n:'Furniture',c:'#9A8060',pci:.2,s:'other',t:'other',x:.72,y:.85},
+  {n:'Pupuk',c:'#9A8060',pci:.1,s:'other',t:'other',x:.75,y:.35},
+  {n:'Kendaraan BBM',c:'#9A8060',pci:.7,s:'other',t:'other',x:.66,y:.75},
+];
+
+// ─── TOAST ────────────────────────────────────────────────────
+function toast(msg,type,dur){
+  if(!dur)dur=3000;
+  const el=document.createElement('div');
+  el.className='toast t'+type;el.textContent=msg;
+  document.getElementById('tt').appendChild(el);
+  setTimeout(()=>{el.style.animation='tIn .25s ease reverse';setTimeout(()=>el.remove(),250);},dur);
+}
+
+// ─── UTILS ────────────────────────────────────────────────────
+function go(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'});}
+function openM(id){document.getElementById(id).classList.add('op');document.body.style.overflow='hidden';}
+function closeM(id){document.getElementById(id).classList.remove('op');document.body.style.overflow='';}
+function shareR(){try{navigator.clipboard.writeText(location.href);}catch(e){}toast('Link disalin!','s');}
+
+function ptab(btn,id){
+  btn.closest('.cw').querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  btn.closest('.cw').querySelectorAll('.pnl').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');document.getElementById(id).classList.add('on');
+}
+function stab(btn,id){
+  btn.closest('section').querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  btn.closest('section').querySelectorAll('.pnl').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');document.getElementById(id).classList.add('on');
+}
+
+function toggleDk(){
+  document.body.classList.toggle('dk');
+  document.getElementById('dkb').textContent=document.body.classList.contains('dk')?'☀️':'🌙';
+  localStorage.setItem('gdk',document.body.classList.contains('dk')?'1':'0');
+}
+
+// ─── CHARTS ──────────────────────────────────────────────────
+function buildECI(filter){
+  const rows=Object.entries(ECI_D).filter(([,v])=>filter==='asean'?v.asean:true);
+  document.getElementById('eciT').innerHTML=rows.map(([n,d])=>{
+    const [r0,r1,r2,r3]=d.r,delta=r0-r3;
+    const dTx=delta>0?`▲ +${delta}`:delta<0?`▼ ${delta}`:'→ 0';
+    const dCl=delta>10?'#27ae60':delta>0?'#E8A210':delta<0?'#A93226':'#888';
+    const bw=Math.max(0,Math.round((1-r3/100)*150));
+    const idn=n==='Indonesia';
+    return `<tr class="${idn?'eidn':''}">
+      <td><span style="color:${d.c}">●</span> ${idn?'<strong>'+n+'</strong>':n}</td>
+      <td>#${r0}</td><td>#${r1}</td><td>#${r2}</td><td><strong>#${r3}</strong></td>
+      <td style="color:${dCl};font-weight:700">${dTx}</td>
+      <td><span class="rbar" style="width:${bw}px;background:${idn?'#A93226':d.c}"></span></td>
+    </tr>`;
+  }).join('');
+}
+
+function buildTM(yr){
+  const d=TM_D[yr]||TM_D['2024'];
+  const el=document.getElementById('tm');
+  el.style.gridTemplateColumns=d.map(r=>r[0]+'fr').join(' ');
+  el.innerHTML=d.map(([p,n,s,c])=>
+    `<div class="tmc" style="background:${c}" onclick="toast('${n}: ${p}% ekspor | ${s}','i')">
+      <div class="tmp">${p}%</div><div class="tmn">${n}</div><div class="tms">${s}</div>
+    </div>`).join('');
+}
+
+function buildStk(country){
+  const d=STK_D[country];
+  const yrs=Object.keys(d).sort();
+  document.getElementById('stkD').innerHTML=yrs.map(yr=>{
+    const v=d[yr],hp=v[3]+v[4];
+    const segs=v.map((pct,i)=>`<div class="skseg" style="width:${pct}%;background:${SK[i]}">${pct>=9?pct+'%':''}</div>`).join('');
+    return `<div class="skrow"><span class="sklbl">${country.toUpperCase()} ${yr}</span>
+      <div class="skbar">${segs}</div>
+      <span class="skpct" style="color:${country==='idn'?'#A93226':'#D4880A'}">${hp}%</span></div>`;
+  }).join('');
+}
+
+function buildGDP(){
+  const mx=8;
+  document.getElementById('gdpB').innerHTML=GDP.map(p=>{
+    const h=Math.round(p.y/mx*148);
+    return `<div class="bcol">
+      <div class="bbar" style="height:${h}px;background:${p.c};min-height:5px;border:${p.idn?'3px solid #7B241C':''}"
+           data-v="${p.n}: GDP growth ${p.y}% | ECI Rank #${p.x}"></div>
+      <span class="blbl">${p.n}</span></div>`;
+  }).join('');
+}
+
+// ─── PRODUCT SPACE SVG ────────────────────────────────────────
+function buildPS(){
+  const svg=document.getElementById('pssvg');
+  if(!svg)return;
+  const W=760,H=390,dk=document.body.classList.contains('dk');
+  // static pre-render of all nodes and edges
+  let h=`<defs>
+    <radialGradient id="bg"><stop offset="0%" stop-color="${dk?'#2A1A0E':'#FEF0D8'}" stop-opacity=".6"/>
+      <stop offset="100%" stop-color="${dk?'#1A0A00':'#FDF4E8'}" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="url(#bg)"/>
+  <ellipse cx="${W*.5}" cy="${H*.5}" rx="${W*.13}" ry="${H*.14}" fill="${dk?'rgba(255,255,255,.03)':'rgba(169,50,38,.04)'}"/>
+  <ellipse cx="${W*.5}" cy="${H*.5}" rx="${W*.22}" ry="${H*.24}" fill="${dk?'rgba(255,255,255,.015)':'rgba(169,50,38,.025)'}"/>
+  <text x="${W*.5}" y="${H*.5-H*.16}" text-anchor="middle" font-size="9" fill="${dk?'rgba(255,255,255,.2)':'rgba(169,50,38,.25)'}">INTI</text>
+  <text x="${W*.5}" y="${H*.5+H*.27}" text-anchor="middle" font-size="9" fill="${dk?'rgba(255,255,255,.1)':'rgba(169,50,38,.15)'}">PINGGIRAN</text>`;
+  // edges: idn → stepping
+  const idnN=PS.filter(n=>n.t==='idn');
+  PS.filter(n=>n.t==='stepping').forEach(sn=>{
+    idnN.filter(i=>i.s===sn.s).forEach(i=>{
+      h+=`<line x1="${i.x*W}" y1="${i.y*H}" x2="${sn.x*W}" y2="${sn.y*H}"
+           stroke="rgba(212,136,10,.28)" stroke-width="1" stroke-dasharray="3,4"/>`;
+    });
+  });
+  // nodes
+  PS.forEach(n=>{
+    const x=n.x*W,y=n.y*H,r=(n.big?9:n.t==='other'&&n.s==='other'?5:7);
+    const sw={idn:2.5,stepping:1.5,target:2}[n.t]||0;
+    const sd=n.t==='stepping'?'stroke-dasharray="3,3"':'';
+    const sk={idn:'#7B241C',stepping:'#C0562A',target:'#1e8449'}[n.t]||'transparent';
+    h+=`<circle cx="${x}" cy="${y}" r="${r}" fill="${n.c}bb" stroke="${sk}" stroke-width="${sw}" ${sd}
+         class="psn" data-s="${n.s}" data-t="${n.t}"
+         onclick="toast('${n.n.replace(/'/g,'`')} | PCI ${n.pci} | ${{idn:'Ekspor IDN',stepping:'Stepping Stone',target:'Produk Target',other:'Produk Lain'}[n.t]}','i')"/>`;
+    if(n.t==='idn'||n.big){
+      h+=`<text x="${x}" y="${y-r-3}" text-anchor="middle" font-size="8" font-weight="600"
+           fill="${dk?'rgba(255,255,255,.75)':'rgba(26,4,0,.7)'}">${n.n.replace(' ★','')}</text>`;
+    }
+  });
+  svg.innerHTML=h;
+}
+
+function filterPS(){
+  const f=document.getElementById('psf').value;
+  document.querySelectorAll('.psn').forEach(el=>{
+    const s=el.dataset.s,t=el.dataset.t;
+    const show=f==='all'||(f==='idn'&&t==='idn')||(f==='target'&&t==='target')||(['nickel','palm','rubber'].includes(f)&&s===f);
+    el.style.opacity=show?'1':'0.08';
+  });
+}
+
+// ─── YIF CHARTS ────────────────────────────────────────────────
+function buildYIF(){
+  // Pie as stacked bar
+  const items=[{l:'A. Green Manufacturing',v:2000,c:'#A93226'},{l:'B. Deep Tech Patent',v:1500,c:'#D4880A'},{l:'C. Knowledge Networks',v:1500,c:'#E8A210'}];
+  document.getElementById('yPie').innerHTML=items.map(it=>`
+    <div class="skrow"><span class="sklbl" style="width:auto;min-width:0;font-size:.78rem;flex:1">${it.l}</span>
+    <div style="width:140px;background:var(--bdr);height:22px;border-radius:3px;overflow:hidden;margin-left:.5rem">
+      <div style="height:100%;background:${it.c};width:${Math.round(it.v/5000*100)}%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700">IDR ${it.v}M</div>
+    </div></div>`).join('');
+  // Geo bar
+  const gd=[{l:'Jawa',v:141,c:'#A93226'},{l:'Sumatera',v:52,c:'#C0562A'},{l:'Kalimantan',v:28,c:'#D4880A'},{l:'Sulawesi',v:18,c:'#E8A210'},{l:'Maluku/Papua',v:5,c:'#27ae60'},{l:'Nusa Tenggara',v:3,c:'#3498db'}];
+  const mx=Math.max(...gd.map(g=>g.v));
+  document.getElementById('yGeo').innerHTML=gd.map(g=>`<div class="bcol">
+    <div class="bbar" style="height:${Math.round(g.v/mx*125)}px;background:${g.c};min-height:3px" data-v="${g.l}: ${g.v} startup"></div>
+    <span class="blbl">${g.l}</span></div>`).join('');
+}
+
+// ─── COI ─────────────────────────────────────────────────────
+function buildCOI(){
+  document.getElementById('tpbL').innerHTML=TPB.map(t=>
+    `<div class="tpi" onclick="toast('${t.n}: PCI ${t.pci} | ${t.s}','i')">
+      <div><strong style="font-size:.85rem">${t.n}</strong><br><small style="color:var(--muted)">${t.s} | PCI ${t.pci}</small></div>
+      <span class="tbg ${t.st==='on'?'ton':t.st==='prog'?'tpr':'tpl'}">${t.st==='on'?'Aktif':t.st==='prog'?'Proses':'Direncanakan'}</span>
+    </div>`).join('');
+  // ECI bar chart
+  const pts=[{yr:'2000',r:55,tgt:false},{yr:'2010',r:56,tgt:false},{yr:'2020',r:55,tgt:false},{yr:'2024',r:55,tgt:false},{yr:'2027',r:52,tgt:true},{yr:'2030',r:46,tgt:true},{yr:'2035',r:40,tgt:true}];
+  const mx=60;
+  document.getElementById('coiB').innerHTML=pts.map(p=>`<div class="bcol">
+    <div class="bbar" style="height:${Math.round((1-p.r/mx)*135)+8}px;background:${p.tgt?'rgba(39,174,96,.55)':'#A93226'};border:${p.tgt?'2px dashed #27ae60':''};min-height:5px" data-v="${p.yr}: #${p.r}${p.tgt?' (target)':''}"></div>
+    <span class="blbl">${p.yr}</span></div>`).join('');
+  document.getElementById('coiN').innerHTML=NEWS.map(n=>`<div class="ni"><span class="nd">${n.d}</span>${n.t}</div>`).join('');
+}
+
+// ─── MODULES + QUIZ ────────────────────────────────────────────
+const lvB={Beginner:'lbb',Intermediate:'lbi',Advanced:'lba'};
+function buildMods(){
+  const pg=JSON.parse(localStorage.getItem('gp')||'{}');
+  document.getElementById('mG').innerHTML=MODS.map(m=>{
+    const p=pg[m.id]||0;
+    return `<div class="modc">
+      <div style="font-size:1.7rem;margin-bottom:.38rem">${m.ic}</div>
+      <h3>${m.t}</h3>
+      <div class="mmeta"><span>⏱ ${m.dur}</span><span class="lb ${lvB[m.lv]}">${m.lv}</span><span class="lb lbf">Gratis</span></div>
+      <p style="font-size:.8rem;color:var(--muted);margin-bottom:.6rem">${m.desc}</p>
+      <div class="mpb"><div class="mpbf" style="width:${p}%"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:.74rem;color:var(--muted);margin-bottom:.65rem">
+        <span>Progress ${p}%</span><span>${p>=100?'✓ Selesai':'Lanjutkan'}</span>
+      </div>
+      <div style="display:flex;gap:.45rem;flex-wrap:wrap">
+        <button class="btn bor" style="font-size:.78rem;padding:.32rem .75rem" onclick="startQ(${m.id})">${p>=100?'🔄 Ulangi':'▶ Quiz'}</button>
+        ${p>=100?`<button class="btn" style="background:#d4edda;color:#155724;border:none;font-size:.78rem;padding:.32rem .75rem" onclick="toast('Sertifikat Modul ${m.id} diunduh','s')">🎓 Sertifikat</button>`:''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+let QS={mid:null,i:0,sc:0,done:false};
+function startQ(mid){
+  QS={mid,i:0,sc:0,done:false};
+  document.getElementById('qTit').textContent='Quiz: '+MODS.find(m=>m.id===mid).t;
+  renderQ();openM('mQ');
+}
+function renderQ(){
+  const qs=QZ[QS.mid],q=qs[QS.i],tot=qs.length;
+  document.getElementById('qPrg').textContent=`${QS.i+1}/${tot}`;
+  document.getElementById('qSc').textContent=`Skor: ${QS.sc}`;
+  document.getElementById('qPB').style.width=((QS.i+1)/tot*100)+'%';
+  document.getElementById('qNxt').style.display='none';
+  QS.done=false;
+  document.getElementById('qCt').innerHTML=`
+    <div class="qq">${QS.i+1}. ${q.q}</div>
+    <div class="qopts">${q.o.map((o,i)=>`<button class="qopt" onclick="ansQ(${i})">${o}</button>`).join('')}</div>
+    <div id="qfb" class="qfb" style="display:none"></div>`;
+}
+function ansQ(ch){
+  if(QS.done)return;QS.done=true;
+  const q=QZ[QS.mid][QS.i];
+  document.querySelectorAll('.qopt').forEach((b,i)=>{b.disabled=true;if(i===q.a)b.classList.add('qok');else if(i===ch)b.classList.add('qno');});
+  const ok=ch===q.a;if(ok)QS.sc++;
+  const fb=document.getElementById('qfb');
+  fb.style.display='block';fb.style.background=ok?'#d4edda':'#fadbd8';fb.style.color=ok?'#155724':'#A93226';
+  fb.textContent=(ok?'✓ Benar! ':'✗ Kurang tepat. ')+q.e;
+  const nb=document.getElementById('qNxt');
+  nb.style.display='inline-flex';
+  nb.textContent=QS.i<QZ[QS.mid].length-1?'Berikutnya →':'Selesaikan ✓';
+}
+function nextQ(){
+  const qs=QZ[QS.mid];
+  if(QS.i<qs.length-1){QS.i++;renderQ();}
+  else{
+    const pct=Math.round(QS.sc/qs.length*100);
+    const pg=JSON.parse(localStorage.getItem('gp')||'{}');
+    pg[QS.mid]=Math.max(pg[QS.mid]||0,pct);
+    localStorage.setItem('gp',JSON.stringify(pg));
+    document.getElementById('qCt').innerHTML=`
+      <div style="text-align:center;padding:1.2rem 0">
+        <div style="font-size:2.8rem;margin-bottom:.35rem">${pct>=80?'🎓':'📖'}</div>
+        <h3 style="color:var(--r);margin-bottom:.25rem">Skor: ${QS.sc}/${qs.length} (${pct}%)</h3>
+        <p style="color:var(--muted);font-size:.86rem">${pct>=80?'Luar biasa! Sertifikat tersedia.':pct>=60?'Bagus! Terus berlatih.':'Pelajari lagi materinya.'}</p>
+        ${pct>=80?`<button class="btn bor" style="margin-top:.75rem" onclick="toast('Sertifikat diunduh','s');closeM('mQ')">🎓 Unduh Sertifikat</button>`:''}
+      </div>`;
+    document.getElementById('qNxt').style.display='none';
+    buildMods();
+    toast(pct>=80?`Skor ${pct}% — Sertifikat tersedia!`:`Skor ${pct}%`,pct>=80?'s':'i');
+  }
+}
+
+// ─── AUTOCOMPLETE ────────────────────────────────────────────
+let selP=null;
+function acQ(q,lid){
+  const list=document.getElementById(lid);
+  if(q.length<2){list.style.display='none';return;}
+  const m=PRODS.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.hs.includes(q)).slice(0,6);
+  if(!m.length){list.style.display='none';return;}
+  const inp=lid==='acL'?'pIn':'yIn';
+  list.innerHTML=m.map(p=>`<div class="aci" onclick="pickP('${p.n}','${p.hs}',${p.pci},'${inp}','${lid}')">
+    <strong>${p.n}</strong><small>HS:${p.hs} PCI:${p.pci}</small></div>`).join('');
+  list.style.display='block';
+}
+function pickP(n,hs,pci,inp,lid){
+  document.getElementById(inp).value=n;document.getElementById(lid).style.display='none';selP={n,hs,pci};
+}
+
+// ─── TAX HOLIDAY ─────────────────────────────────────────────
+let cmpL=[];
+function runTax(){
+  const q=document.getElementById('pIn').value;
+  if(!q){toast('Masukkan nama produk','e');return;}
+  const loc=parseInt(document.getElementById('loc').value)||0;
+  const p=selP||PRODS.find(x=>x.n.toLowerCase().includes(q.toLowerCase())||x.hs.includes(q))||{n:q,hs:'N/A',pci:+(Math.random()*.7+0.5).toFixed(2)};
+  let tier,dur,rd,lg;
+  if(p.pci>=1.5){tier='Tier 1 — Premium';dur=15+loc;rd='100% Super Deduction';lg='PP 78/2019 Ps.5 + Amandemen';}
+  else if(p.pci>=.8){tier='Tier 2 — Tinggi';dur=10+loc;rd='50% Super Deduction';lg='PP 78/2019 Pasal 4';}
+  else if(p.pci>=.5){tier='Tier 3 — Menengah';dur=5+loc;rd='25% Deduction';lg='PP 78/2019 Pasal 3';}
+  else{tier='Tidak Memenuhi Syarat';dur=0;rd='—';lg='PCI minimum 0.5';}
+  document.getElementById('rP').textContent=p.n;
+  document.getElementById('rH').textContent=p.hs;
+  document.getElementById('rC').textContent=p.pci.toFixed(2);
+  document.getElementById('rT').innerHTML=`<span class="tp ${dur>=15?'tp1':dur>=10?'tp2':'tp3'}">${tier}</span>`;
+  document.getElementById('rD').textContent=dur>0?dur+' tahun'+(loc?' (termasuk +'+loc+' bonus lokasi)':''):'-';
+  document.getElementById('rRd').textContent=rd;
+  document.getElementById('rLg').textContent=lg;
+  document.getElementById('taxR').style.display='block';
+  selP=p;toast(p.n+' — '+dur+' tahun tax holiday','s');updSC();
+}
+function addCmp(){
+  if(!selP){toast('Hitung insentif dulu','e');return;}
+  if(cmpL.length>=3){toast('Maks 3 produk','e');return;}
+  if(cmpL.find(x=>x.n===selP.n)){toast('Sudah ada','i');return;}
+  const loc=parseInt(document.getElementById('loc').value)||0;
+  let dur=0;if(selP.pci>=1.5)dur=15+loc;else if(selP.pci>=.8)dur=10+loc;else if(selP.pci>=.5)dur=5+loc;
+  cmpL.push({...selP,dur});renderCmp();toast(selP.n+' ditambahkan','s');
+}
+function renderCmp(){
+  const p=document.getElementById('cmpP'),g=document.getElementById('cmpG'),b=document.getElementById('cmpBr');
+  if(!cmpL.length){p.style.display='none';return;}
+  p.style.display='block';
+  g.innerHTML=cmpL.map((pr,i)=>`<div class="cmpc">
+    <button class="cmprm" onclick="cmpL.splice(${i},1);renderCmp()">×</button>
+    <h4>${pr.n}</h4><div style="font-size:.74rem;color:var(--muted)">HS: ${pr.hs}</div>
+    <div class="cmpn">${pr.dur}</div><div style="font-size:.74rem;color:var(--muted)">tahun | PCI ${pr.pci.toFixed(2)}</div>
+  </div>`).join('');
+  const mx=Math.max(...cmpL.map(x=>x.dur),1);
+  b.innerHTML=cmpL.map(pr=>`<div class="skrow">
+    <span class="sklbl" style="width:100px;font-size:.76rem">${pr.n.substring(0,16)}</span>
+    <div style="flex:1;background:var(--bdr);height:18px;border-radius:3px;overflow:hidden">
+      <div style="height:100%;background:linear-gradient(90deg,var(--r),var(--o));width:${Math.round(pr.dur/mx*100)}%;border-radius:3px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.68rem;font-weight:700;transition:.6s">${pr.dur} thn</div>
+    </div></div>`).join('');
+}
+function clearCmp(){cmpL=[];renderCmp();}
+
+// ─── YIF ELIGIBILITY ────────────────────────────────────────
+function runYIF(){
+  const q=document.getElementById('yIn').value;
+  if(!q){toast('Masukkan produk startup','e');return;}
+  const loc=parseInt(document.getElementById('yLoc').value)||0;
+  const base=parseInt(document.getElementById('ySt').value)||500;
+  const p=PRODS.find(x=>x.n.toLowerCase().includes(q.toLowerCase()));
+  const pci=p?p.pci:+(Math.random()*.8+0.4).toFixed(2);
+  const ok=pci>=.8,cats={500:'A. Green Manufacturing',1000:'B. Deep Tech Patent',2000:'B. Deep Tech Patent'};
+  const total=ok?base*(1+loc/100):0;
+  const ys=document.getElementById('yS');
+  ys.textContent=ok?'✓ ELIGIBLE':'✗ Tidak Memenuhi (PCI < 0.8)';ys.style.color=ok?'#27ae60':'#A93226';
+  document.getElementById('yC').textContent=pci.toFixed(2);
+  document.getElementById('yCa').textContent=ok?cats[base]:'-';
+  document.getElementById('yB').textContent=ok?'Rp '+base+' juta':'-';
+  document.getElementById('yBo').textContent=loc?'+'+loc+'% bonus geografis':'Tidak ada bonus';
+  document.getElementById('yT').textContent=ok?'Rp '+total.toFixed(0)+' juta*':'-';
+  document.getElementById('yifR').style.display='block';
+  toast(ok?'Eligible! Estimasi Rp '+total.toFixed(0)+' juta':'PCI < 0.8 — tidak eligible',ok?'s':'e');updSC();
+}
+
+// ─── TARIFF ─────────────────────────────────────────────────
+function runTariff(){
+  const cn=document.getElementById('tC').value,pd=document.getElementById('tP').value;
+  const rate=parseFloat(document.getElementById('tR').value),el=parseFloat(document.getElementById('tSc').value);
+  if(!rate||rate<=0){toast('Masukkan persentase tarif','e');return;}
+  const base=(TRF[pd]&&TRF[pd][cn])||1000;
+  const proj=base*(1-rate*el/100),ch=(proj-base)/base*100,imp=Math.abs(proj-base);
+  document.getElementById('tCu').textContent='USD '+base.toFixed(0)+' juta';
+  document.getElementById('tPr').textContent='USD '+proj.toFixed(0)+' juta';
+  const tch=document.getElementById('tCh');
+  tch.textContent=ch.toFixed(1)+'%';tch.style.color=ch<0?'#A93226':'#27ae60';
+  document.getElementById('tIm').textContent='USD '+imp.toFixed(0)+' juta';
+  document.getElementById('tEC').textContent=ch<-10?'Potensi turun ECI 0.02–0.05':ch<-5?'Dampak kecil ke ECI':'Dampak negligible';
+  document.getElementById('tAd').textContent='Diversifikasi ke '+({us:'Eropa/India',cn:'AS/India',eu:'Asia',jp:'ASEAN',in:'Afrika/ME'}[cn]||'pasar alternatif');
+  document.getElementById('tarR').style.display='block';
+  const mxH=68;
+  document.getElementById('tbC').style.height=mxH+'px';
+  document.getElementById('tbP').style.height=Math.max(Math.round(proj/base*mxH),3)+'px';
+  toast('Simulasi tarif selesai','s');updSC();
+}
+
+// ─── SIM COUNTER ─────────────────────────────────────────────
+function updSC(){
+  const n=(parseInt(localStorage.getItem('gsc')||'0'))+1;
+  localStorage.setItem('gsc',n);document.getElementById('sc').textContent=n;
+}
+
+// ─── SCROLL ──────────────────────────────────────────────────
+let scrollT;
+window.addEventListener('scroll',()=>{
+  clearTimeout(scrollT);scrollT=setTimeout(()=>{
+    const h=document.documentElement.scrollHeight-innerHeight;
+    document.getElementById('sp').style.width=(scrollY/h*100)+'%';
+    ['home','dash','ps','sim','yif','coi','learn'].forEach(id=>{
+      const el=document.getElementById(id);if(!el)return;
+      const r=el.getBoundingClientRect();
+      if(r.top<=80&&r.bottom>80){
+        document.querySelectorAll('.nl a').forEach(a=>a.classList.remove('on'));
+        document.querySelector('.nl a[href="#'+id+'"]')?.classList.add('on');
+      }
+    });
+  },50);
+},{passive:true});
+
+// ─── MODAL CLOSE ON BACKDROP ─────────────────────────────────
+document.addEventListener('click',e=>{
+  if(e.target.classList.contains('modal'))closeM(e.target.id);
+  if(!e.target.closest('.fg'))document.querySelectorAll('.acd').forEach(d=>d.style.display='none');
+},{passive:true});
+
+// ─── INIT — lazy render with IntersectionObserver ────────────
+function initEager(){
+  if(localStorage.getItem('gdk')==='1'){document.body.classList.add('dk');document.getElementById('dkb').textContent='☀️';}
+  document.getElementById('sc').textContent=localStorage.getItem('gsc')||0;
+  // YIF progress bar
+  setTimeout(()=>{
+    const pf=document.getElementById('pf');if(pf){pf.style.width='65%';pf.textContent='IDR 3,25 T / 5 T (65%)';}
+    const pl=document.getElementById('pfl');if(pl)pl.textContent='Tersisa: IDR 1,75 T | Deadline: 31 Des 2026';
+    const dl=document.getElementById('dL');if(dl){const d=Math.ceil((new Date('2026-12-31')-Date.now())/864e5);dl.textContent=d+' hari lagi';}
+  },350);
+}
+
+// Build sections lazily when they scroll into view
+const IO=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const id=e.target.id;
+    if(id==='dash'){buildECI('all');buildTM('2024');buildStk('idn');buildGDP();}
+    if(id==='ps'){buildPS();}
+    if(id==='yif'){buildYIF();}
+    if(id==='coi'){buildCOI();}
+    if(id==='learn'){buildMods();}
+    IO.unobserve(e.target);
+  });
+},{rootMargin:'0px 0px -60px 0px'});
+
+document.addEventListener('DOMContentLoaded',()=>{
+  initEager();
+  ['dash','ps','yif','coi','learn'].forEach(id=>{
+    const el=document.getElementById(id);if(el)IO.observe(el);
+  });
+  toast('GreenLeap ID siap » semua fitur terbuka! 🌿','s',3500);
+});
+</script>
+
+
+</body></html>
